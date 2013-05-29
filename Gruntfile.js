@@ -11,10 +11,21 @@ module.exports = function(grunt) {
           keepalive: true
         }
       }
+    },
+    karma: {
+      unit: {
+        configFile: 'karma.conf.js'
+      },
+      watch: {
+        configFile: 'karma.conf.js',
+        autoWatch: true,
+        singleRun: false
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-karma');
 
   // Default task(s).
   grunt.registerTask('default', ['connect']);
