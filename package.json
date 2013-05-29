@@ -1,0 +1,29 @@
+{
+  "name": "on-time",
+  "version": "0.0.0",
+  "description": "on-time =======",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geekarist/on-time.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "ae69a2a5e3e916b0dcc408d74be63dbfa72fdc8b",
+  "bugs": {
+    "url": "https://github.com/geekarist/on-time/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-connect": "~0.3.0"
+  }
+}
