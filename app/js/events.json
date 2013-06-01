@@ -1,0 +1,1983 @@
+{
+ "kind": "calendar#events",
+ "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/U063mE8MptUYZysD8HyNRc4uTxE\"",
+ "summary": "Planning 2",
+ "description": "",
+ "updated": "2013-05-31T23:33:29.291Z",
+ "timeZone": "Europe/Paris",
+ "accessRole": "owner",
+ "items": [
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2NDU5MjQxMjIzNDAwMA\"",
+   "id": "l7b3n60kla2ge18qducn1jm4r8",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bDdiM242MGtsYTJnZTE4cWR1Y24xam00cjhfMjAxMzA0MDFUMDUwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:26:29.000Z",
+   "updated": "2013-03-29T21:26:52.234Z",
+   "summary": "Petit dej",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-04-01T07:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-04-01T08:15:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"
+   ],
+   "iCalUID": "l7b3n60kla2ge18qducn1jm4r8@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2NDU5Mjk2NzQyNjAwMA\"",
+   "id": "r4gv4ht53e9rqgg9jvvgf5i9cs",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cjRndjRodDUzZTlycWdnOWp2dmdmNWk5Y3NfMjAxMzA0MDFUMDYxNTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:27:10.000Z",
+   "updated": "2013-03-29T21:36:07.426Z",
+   "summary": "Douche",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-04-01T08:15:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-04-01T09:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"
+   ],
+   "iCalUID": "r4gv4ht53e9rqgg9jvvgf5i9cs@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2NDU5MzAwNzUxNDAwMA\"",
+   "id": "b3c1977fj9rbpv9p2sadhqaf60",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YjNjMTk3N2ZqOXJicHY5cDJzYWRocWFmNjBfMjAxMzA0MDFUMDcwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:29:34.000Z",
+   "updated": "2013-03-29T21:36:47.514Z",
+   "summary": "Transport",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-04-01T09:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-04-01T09:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"
+   ],
+   "iCalUID": "b3c1977fj9rbpv9p2sadhqaf60@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5MTM0OTkwMzAwMA\"",
+   "id": "gd38304otun2vog50f691kied8",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=Z2QzODMwNG90dW4ydm9nNTBmNjkxa2llZDhfMjAxMzA0MDFUMDYxNTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:21:02.000Z",
+   "updated": "2013-05-26T18:02:29.903Z",
+   "summary": "Psy 8h35",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-04-01T08:15:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-04-01T08:15:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;UNTIL=20130513T061500Z;BYDAY=MO"
+   ],
+   "iCalUID": "gd38304otun2vog50f691kied8@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5MjI4NTM1ODAwMA\"",
+   "id": "68fbov12a5pmltgrttvoi96jic",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NjhmYm92MTJhNXBtbHRncnR0dm9pOTZqaWNfMjAxMzA0MDFUMjA0NTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:47:55.000Z",
+   "updated": "2013-05-26T18:18:05.358Z",
+   "summary": "??",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-04-01T22:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-04-02T00:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;UNTIL=20130520T215959Z;BYDAY=MO,TU,WE,TH,FR"
+   ],
+   "iCalUID": "68fbov12a5pmltgrttvoi96jic@google.com",
+   "sequence": 0,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5MjMzMzA0MDAwMA\"",
+   "id": "b80cibuebge87ti0r1b6ug8oa0",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YjgwY2lidWViZ2U4N3RpMHIxYjZ1ZzhvYTBfMjAxMzAzMzFUMjIwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:22:41.000Z",
+   "updated": "2013-05-26T18:18:53.040Z",
+   "summary": "Sommeil",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-04-01T00:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-04-01T07:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;UNTIL=20130520T215959Z;BYDAY=MO,TU,WE,TH,FR"
+   ],
+   "iCalUID": "b80cibuebge87ti0r1b6ug8oa0@google.com",
+   "sequence": 2,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5MjM0OTA1MDAwMA\"",
+   "id": "68fbov12a5pmltgrttvoi96jic_20130520T204500Z",
+   "status": "cancelled",
+   "recurringEventId": "68fbov12a5pmltgrttvoi96jic",
+   "originalStartTime": {
+    "dateTime": "2013-05-20T22:45:00+02:00"
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5MjQwMjMyNjAwMA\"",
+   "id": "iagcp6rq86m7k6mgo54nhb4nmg",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=aWFnY3A2cnE4Nm03azZtZ281NG5oYjRubWdfMjAxMzA1MjBUMjEzMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:22:41.000Z",
+   "updated": "2013-05-26T18:20:02.326Z",
+   "summary": "Sommeil",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-20T23:30:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-05-21T07:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;UNTIL=20130520T215959Z;BYDAY=MO,TU,WE,TH,FR"
+   ],
+   "iCalUID": "iagcp6rq86m7k6mgo54nhb4nmg@google.com",
+   "sequence": 3,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5MjQxNjEwNjAwMA\"",
+   "id": "iagcp6rq86m7k6mgo54nhb4nmg_20130520T213000Z",
+   "status": "cancelled",
+   "recurringEventId": "iagcp6rq86m7k6mgo54nhb4nmg",
+   "originalStartTime": {
+    "dateTime": "2013-05-20T23:30:00+02:00"
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5MjQ1OTEzOTAwMA\"",
+   "id": "3hossb5qh89fhsvou3so0u5rhg",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=M2hvc3NiNXFoODlmaHN2b3Uzc28wdTVyaGdfMjAxMzA1MjBUMjEzMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:22:41.000Z",
+   "updated": "2013-05-26T18:20:59.139Z",
+   "summary": "Sommeil",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-20T23:30:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-05-21T07:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;UNTIL=20130602T215959Z;BYDAY=MO,TU,WE,TH,FR"
+   ],
+   "iCalUID": "3hossb5qh89fhsvou3so0u5rhg@google.com",
+   "sequence": 4,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5MzAwNTE0NjAwMA\"",
+   "id": "had9b7at8lbrto9imut3lhml20",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=aGFkOWI3YXQ4bGJydG85aW11dDNsaG1sMjBfMjAxMzA0MDFUMDc0NTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:29:43.000Z",
+   "updated": "2013-05-26T18:30:05.146Z",
+   "summary": "Travail",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-04-01T09:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-04-01T19:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;UNTIL=20130526T215959Z;BYDAY=MO,TU,WE,TH,FR"
+   ],
+   "iCalUID": "had9b7at8lbrto9imut3lhml20@google.com",
+   "sequence": 3,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5MzU5NTE0NzAwMA\"",
+   "id": "u4bc49seevqkk8l3nt97n5f880",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=dTRiYzQ5c2VldnFrazhsM250OTduNWY4ODBfMjAxMzA1MjlUMTkzMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:32:57.000Z",
+   "updated": "2013-05-26T18:39:55.147Z",
+   "summary": "Repas",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-29T21:30:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-05-29T22:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;UNTIL=20130605T215959Z;BYDAY=MO,TU,WE,TH,FR"
+   ],
+   "iCalUID": "u4bc49seevqkk8l3nt97n5f880@google.com",
+   "sequence": 3,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5MzgyMDEwNDAwMA\"",
+   "id": "iumg782c2pjo6mm41ua6k8jte0",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=aXVtZzc4MmMycGpvNm1tNDF1YTZrOGp0ZTBfMjAxMzA1MjdUMTkzMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:32:57.000Z",
+   "updated": "2013-05-26T18:43:40.104Z",
+   "summary": "Repas",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-27T21:30:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-05-27T22:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;UNTIL=20130527T193000Z;BYDAY=MO,WE,TH,FR"
+   ],
+   "iCalUID": "iumg782c2pjo6mm41ua6k8jte0@google.com",
+   "sequence": 2,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5MzgyMDEwNDAwMA\"",
+   "id": "lngl3itf5le3vdbhgeq7gm64n8",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bG5nbDNpdGY1bGUzdmRiaGdlcTdnbTY0bjhfMjAxMzA0MDFUMTkzMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:32:57.000Z",
+   "updated": "2013-05-26T18:43:40.104Z",
+   "summary": "Repas",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-04-01T21:30:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-04-01T22:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;UNTIL=20130526T215959Z;BYDAY=MO,TU,WE,TH,FR"
+   ],
+   "iCalUID": "lngl3itf5le3vdbhgeq7gm64n8@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5MzgzOTg2NzAwMA\"",
+   "id": "n91uk0bhiqo44kft9kce9fq02g",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bjkxdWswYmhpcW80NGtmdDlrY2U5ZnEwMmdfMjAxMzA1MjhUMTk0NTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:32:57.000Z",
+   "updated": "2013-05-26T18:43:59.867Z",
+   "summary": "Repas",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-28T21:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-05-28T23:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;UNTIL=20130528T194500Z;BYDAY=TU"
+   ],
+   "iCalUID": "n91uk0bhiqo44kft9kce9fq02g@google.com",
+   "sequence": 2,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5Mzk2NTg3MjAwMA\"",
+   "id": "u4bc49seevqkk8l3nt97n5f880_20130530T193000Z",
+   "status": "cancelled",
+   "recurringEventId": "u4bc49seevqkk8l3nt97n5f880",
+   "originalStartTime": {
+    "dateTime": "2013-05-30T21:30:00+02:00"
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5Nzk4MDI5NDAwMA\"",
+   "id": "hd9hafph07s8pjg0lk12s4nffs",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=aGQ5aGFmcGgwN3M4cGpnMGxrMTJzNG5mZnNfMjAxMzA1MzBUMTcwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-05-26T18:46:23.000Z",
+   "updated": "2013-05-26T19:53:00.294Z",
+   "summary": "Repas",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-30T19:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-05-30T20:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;BYDAY=TH"
+   ],
+   "iCalUID": "hd9hafph07s8pjg0lk12s4nffs@google.com",
+   "sequence": 2,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5Nzk5NTk5NjAwMA\"",
+   "id": "9ig5sdlo87di47nc55umv1bd6k",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=OWlnNXNkbG84N2RpNDduYzU1dW12MWJkNmtfMjAxMzA1MjdUMjA0NTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-05-26T19:51:15.000Z",
+   "updated": "2013-05-26T19:53:15.996Z",
+   "summary": "Vaisselle & rangement",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-27T22:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-05-27T23:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;BYDAY=MO,WE,FR"
+   ],
+   "iCalUID": "9ig5sdlo87di47nc55umv1bd6k@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5ODA4Nzc2MTAwMA\"",
+   "id": "72oj6b7mv6h0pi95ui4i9umccg",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NzJvajZiN212NmgwcGk5NXVpNGk5dW1jY2dfMjAxMzA1MzBUMTgwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-05-26T19:53:46.000Z",
+   "updated": "2013-05-26T19:54:47.761Z",
+   "summary": "Vaisselle & rangement",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-30T20:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-05-30T20:15:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;BYDAY=TH"
+   ],
+   "iCalUID": "72oj6b7mv6h0pi95ui4i9umccg@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTU5ODEwNDIwNDAwMA\"",
+   "id": "naafucb9f07usl8p4r72j7p4n8",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bmFhZnVjYjlmMDd1c2w4cDRyNzJqN3A0bjhfMjAxMzA1MjhUMjEwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-05-26T19:54:05.000Z",
+   "updated": "2013-05-26T19:55:04.204Z",
+   "summary": "Vaisselle & rangement",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-28T23:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-05-28T23:15:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;BYDAY=TU"
+   ],
+   "iCalUID": "naafucb9f07usl8p4r72j7p4n8@google.com",
+   "sequence": 3,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTYzMTg0MTA2ODAwMA\"",
+   "id": "l7b3n60kla2ge18qducn1jm4r8_20130527T050000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bDdiM242MGtsYTJnZTE4cWR1Y24xam00cjhfMjAxMzA1MjdUMDUwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:26:29.000Z",
+   "updated": "2013-05-27T05:17:21.068Z",
+   "summary": "Petit dej",
+   "description": "+15",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-27T07:00:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-27T08:15:00+02:00"
+   },
+   "recurringEventId": "l7b3n60kla2ge18qducn1jm4r8",
+   "originalStartTime": {
+    "dateTime": "2013-05-27T07:00:00+02:00"
+   },
+   "iCalUID": "l7b3n60kla2ge18qducn1jm4r8@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTYzMTg3Mzg2NDAwMA\"",
+   "id": "3hossb5qh89fhsvou3so0u5rhg_20130531T213000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=M2hvc3NiNXFoODlmaHN2b3Uzc28wdTVyaGdfMjAxMzA1MzFUMjEzMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:22:41.000Z",
+   "updated": "2013-05-27T05:17:53.864Z",
+   "summary": "Sommeil",
+   "description": "+15 Envie de dormir",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-26T23:30:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-27T07:00:00+02:00"
+   },
+   "recurringEventId": "3hossb5qh89fhsvou3so0u5rhg",
+   "originalStartTime": {
+    "dateTime": "2013-05-31T23:30:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "iCalUID": "3hossb5qh89fhsvou3so0u5rhg@google.com",
+   "sequence": 5,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTYzNjI2ODA1ODAwMA\"",
+   "id": "r4gv4ht53e9rqgg9jvvgf5i9cs_20130527T061500Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cjRndjRodDUzZTlycWdnOWp2dmdmNWk5Y3NfMjAxMzA1MjdUMDYxNTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:27:10.000Z",
+   "updated": "2013-05-27T06:31:08.058Z",
+   "summary": "Douche",
+   "description": "+16 Envie de bosser sur on-time",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-27T08:15:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-27T09:00:00+02:00"
+   },
+   "recurringEventId": "r4gv4ht53e9rqgg9jvvgf5i9cs",
+   "originalStartTime": {
+    "dateTime": "2013-05-27T08:15:00+02:00"
+   },
+   "iCalUID": "r4gv4ht53e9rqgg9jvvgf5i9cs@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTYzODA4NjM4MTAwMA\"",
+   "id": "b3c1977fj9rbpv9p2sadhqaf60_20130527T070000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YjNjMTk3N2ZqOXJicHY5cDJzYWRocWFmNjBfMjAxMzA1MjdUMDcwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:29:34.000Z",
+   "updated": "2013-05-27T07:01:26.381Z",
+   "summary": "Transport",
+   "description": "+2",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-27T09:00:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-27T09:45:00+02:00"
+   },
+   "recurringEventId": "b3c1977fj9rbpv9p2sadhqaf60",
+   "originalStartTime": {
+    "dateTime": "2013-05-27T09:00:00+02:00"
+   },
+   "iCalUID": "b3c1977fj9rbpv9p2sadhqaf60@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTY1MzM1NzAxMzAwMA\"",
+   "id": "0mpehmvbu4l0opic8snsmsdk5c",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=MG1wZWhtdmJ1NGwwb3BpYzhzbnNtc2RrNWNfMjAxMzA1MjdUMDc0NTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:29:43.000Z",
+   "updated": "2013-05-27T11:15:57.013Z",
+   "summary": "Travail",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-27T09:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-05-27T18:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;UNTIL=20130527T215959Z;BYDAY=MO,TU,WE,TH,FR"
+   ],
+   "iCalUID": "0mpehmvbu4l0opic8snsmsdk5c@google.com",
+   "sequence": 4,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTY1MzM1NzAxMzAwMA\"",
+   "id": "0mpehmvbu4l0opic8snsmsdk5c_20130527T074500Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=MG1wZWhtdmJ1NGwwb3BpYzhzbnNtc2RrNWNfMjAxMzA1MjdUMDc0NTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:29:43.000Z",
+   "updated": "2013-05-27T11:15:57.013Z",
+   "summary": "Travail",
+   "description": "-2",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-27T09:45:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-27T12:00:00+02:00"
+   },
+   "recurringEventId": "0mpehmvbu4l0opic8snsmsdk5c",
+   "originalStartTime": {
+    "dateTime": "2013-05-27T09:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "iCalUID": "0mpehmvbu4l0opic8snsmsdk5c@google.com",
+   "sequence": 4,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTY1MzM1NzAxMzAwMA\"",
+   "id": "913109ldfcpuis3uabdj6kvnrg",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=OTEzMTA5bGRmY3B1aXMzdWFiZGo2a3ZucmdfMjAxMzA1MjhUMDc0NTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:29:43.000Z",
+   "updated": "2013-05-27T11:15:57.013Z",
+   "summary": "Travail",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-28T09:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-05-28T12:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"
+   ],
+   "iCalUID": "913109ldfcpuis3uabdj6kvnrg@google.com",
+   "sequence": 5,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTY1MzQwMTM0ODAwMA\"",
+   "id": "713ugn0s3crk6v360mnkh7lrvk",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NzEzdWduMHMzY3JrNnYzNjBtbmtoN2xydmtfMjAxMzA1MjdUMTIwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-05-27T11:16:22.000Z",
+   "updated": "2013-05-27T11:16:41.348Z",
+   "summary": "Travail",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-27T14:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-05-27T18:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurrence": [
+    "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"
+   ],
+   "iCalUID": "713ugn0s3crk6v360mnkh7lrvk@google.com",
+   "sequence": 0,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTY1ODQ2NzE1ODAwMA\"",
+   "id": "713ugn0s3crk6v360mnkh7lrvk_20130527T120000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NzEzdWduMHMzY3JrNnYzNjBtbmtoN2xydmtfMjAxMzA1MjdUMTIwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-05-27T11:16:22.000Z",
+   "updated": "2013-05-27T12:41:07.158Z",
+   "summary": "Travail",
+   "description": "+15 Tltes",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-27T14:00:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-27T18:00:00+02:00"
+   },
+   "recurringEventId": "713ugn0s3crk6v360mnkh7lrvk",
+   "originalStartTime": {
+    "dateTime": "2013-05-27T14:00:00+02:00"
+   },
+   "iCalUID": "713ugn0s3crk6v360mnkh7lrvk@google.com",
+   "sequence": 0,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTY4Mzc5ODU3MzAwMA\"",
+   "id": "iumg782c2pjo6mm41ua6k8jte0_20130527T193000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=aXVtZzc4MmMycGpvNm1tNDF1YTZrOGp0ZTBfMjAxMzA1MjdUMTkzMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:32:57.000Z",
+   "updated": "2013-05-27T19:43:18.573Z",
+   "summary": "Repas",
+   "description": "+13",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-27T21:30:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-05-27T22:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurringEventId": "iumg782c2pjo6mm41ua6k8jte0",
+   "originalStartTime": {
+    "dateTime": "2013-05-27T21:30:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "iCalUID": "iumg782c2pjo6mm41ua6k8jte0@google.com",
+   "sequence": 2,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTY4OTI1NDYwMTAwMA\"",
+   "id": "9ig5sdlo87di47nc55umv1bd6k_20130527T204500Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=OWlnNXNkbG84N2RpNDduYzU1dW12MWJkNmtfMjAxMzA1MjdUMjA0NTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-05-26T19:51:15.000Z",
+   "updated": "2013-05-27T21:14:14.601Z",
+   "summary": "Vaisselle & rangement",
+   "description": "+30",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-27T22:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-05-27T23:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurringEventId": "9ig5sdlo87di47nc55umv1bd6k",
+   "originalStartTime": {
+    "dateTime": "2013-05-27T22:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "iCalUID": "9ig5sdlo87di47nc55umv1bd6k@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTY5MDgwODcyMzAwMA\"",
+   "id": "3hossb5qh89fhsvou3so0u5rhg_20130527T213000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=M2hvc3NiNXFoODlmaHN2b3Uzc28wdTVyaGdfMjAxMzA1MjdUMjEzMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:22:41.000Z",
+   "updated": "2013-05-27T21:40:08.723Z",
+   "summary": "Sommeil",
+   "description": "+10",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-27T23:30:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-28T07:00:00+02:00"
+   },
+   "recurringEventId": "3hossb5qh89fhsvou3so0u5rhg",
+   "originalStartTime": {
+    "dateTime": "2013-05-27T23:30:00+02:00"
+   },
+   "iCalUID": "3hossb5qh89fhsvou3so0u5rhg@google.com",
+   "sequence": 4,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTcxODMwMzMyOTAwMA\"",
+   "id": "l7b3n60kla2ge18qducn1jm4r8_20130528T050000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bDdiM242MGtsYTJnZTE4cWR1Y24xam00cjhfMjAxMzA1MjhUMDUwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:26:29.000Z",
+   "updated": "2013-05-28T05:18:23.329Z",
+   "summary": "Petit dej",
+   "description": "+15 Trop fatigué",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-28T07:00:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-28T08:15:00+02:00"
+   },
+   "recurringEventId": "l7b3n60kla2ge18qducn1jm4r8",
+   "originalStartTime": {
+    "dateTime": "2013-05-28T07:00:00+02:00"
+   },
+   "iCalUID": "l7b3n60kla2ge18qducn1jm4r8@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTcyMjk2MDgwNzAwMA\"",
+   "id": "r4gv4ht53e9rqgg9jvvgf5i9cs_20130528T061500Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cjRndjRodDUzZTlycWdnOWp2dmdmNWk5Y3NfMjAxMzA1MjhUMDYxNTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:27:10.000Z",
+   "updated": "2013-05-28T06:36:00.807Z",
+   "summary": "Douche",
+   "description": "+20 EFlrt",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-28T08:15:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-28T09:00:00+02:00"
+   },
+   "recurringEventId": "r4gv4ht53e9rqgg9jvvgf5i9cs",
+   "originalStartTime": {
+    "dateTime": "2013-05-28T08:15:00+02:00"
+   },
+   "iCalUID": "r4gv4ht53e9rqgg9jvvgf5i9cs@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTcyNDUzMjQwNzAwMA\"",
+   "id": "b3c1977fj9rbpv9p2sadhqaf60_20130528T070000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YjNjMTk3N2ZqOXJicHY5cDJzYWRocWFmNjBfMjAxMzA1MjhUMDcwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:29:34.000Z",
+   "updated": "2013-05-28T07:02:12.407Z",
+   "summary": "Transport",
+   "description": "+3",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-28T09:00:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-28T09:45:00+02:00"
+   },
+   "recurringEventId": "b3c1977fj9rbpv9p2sadhqaf60",
+   "originalStartTime": {
+    "dateTime": "2013-05-28T09:00:00+02:00"
+   },
+   "iCalUID": "b3c1977fj9rbpv9p2sadhqaf60@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTc2Nzg5NTk1MjAwMA\"",
+   "id": "713ugn0s3crk6v360mnkh7lrvk_20130528T120000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NzEzdWduMHMzY3JrNnYzNjBtbmtoN2xydmtfMjAxMzA1MjhUMTIwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-05-27T11:16:22.000Z",
+   "updated": "2013-05-28T19:04:55.952Z",
+   "summary": "Travail",
+   "description": "+5",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-28T14:00:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-28T18:00:00+02:00"
+   },
+   "recurringEventId": "713ugn0s3crk6v360mnkh7lrvk",
+   "originalStartTime": {
+    "dateTime": "2013-05-28T14:00:00+02:00"
+   },
+   "iCalUID": "713ugn0s3crk6v360mnkh7lrvk@google.com",
+   "sequence": 0,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTc2NzkxMTIyNTAwMA\"",
+   "id": "913109ldfcpuis3uabdj6kvnrg_20130528T074500Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=OTEzMTA5bGRmY3B1aXMzdWFiZGo2a3ZucmdfMjAxMzA1MjhUMDc0NTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:29:43.000Z",
+   "updated": "2013-05-28T19:05:11.225Z",
+   "summary": "Travail",
+   "description": "+5",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-28T09:45:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-28T12:00:00+02:00"
+   },
+   "recurringEventId": "913109ldfcpuis3uabdj6kvnrg",
+   "originalStartTime": {
+    "dateTime": "2013-05-28T09:45:00+02:00"
+   },
+   "iCalUID": "913109ldfcpuis3uabdj6kvnrg@google.com",
+   "sequence": 5,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTc3ODE5NDA3NzAwMA\"",
+   "id": "n91uk0bhiqo44kft9kce9fq02g_20130528T194500Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bjkxdWswYmhpcW80NGtmdDlrY2U5ZnEwMmdfMjAxMzA1MjhUMTk0NTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:32:57.000Z",
+   "updated": "2013-05-28T21:56:34.077Z",
+   "summary": "Repas",
+   "description": "+20",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-28T21:45:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-28T23:00:00+02:00"
+   },
+   "recurringEventId": "n91uk0bhiqo44kft9kce9fq02g",
+   "originalStartTime": {
+    "dateTime": "2013-05-28T21:45:00+02:00"
+   },
+   "iCalUID": "n91uk0bhiqo44kft9kce9fq02g@google.com",
+   "sequence": 2,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTc3ODIwNzI1NjAwMA\"",
+   "id": "naafucb9f07usl8p4r72j7p4n8_20130528T210000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bmFhZnVjYjlmMDd1c2w4cDRyNzJqN3A0bjhfMjAxMzA1MjhUMjEwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-05-26T19:54:05.000Z",
+   "updated": "2013-05-28T21:56:47.256Z",
+   "summary": "Vaisselle & rangement",
+   "description": "+30",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-28T23:00:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-28T23:15:00+02:00"
+   },
+   "recurringEventId": "naafucb9f07usl8p4r72j7p4n8",
+   "originalStartTime": {
+    "dateTime": "2013-05-28T23:00:00+02:00"
+   },
+   "iCalUID": "naafucb9f07usl8p4r72j7p4n8@google.com",
+   "sequence": 3,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTc4MDEyMDQ2OTAwMA\"",
+   "id": "3hossb5qh89fhsvou3so0u5rhg_20130528T213000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=M2hvc3NiNXFoODlmaHN2b3Uzc28wdTVyaGdfMjAxMzA1MjhUMjEzMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:22:41.000Z",
+   "updated": "2013-05-28T22:28:40.469Z",
+   "summary": "Sommeil",
+   "description": "+58 28 pouces",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-28T23:30:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-29T07:00:00+02:00"
+   },
+   "recurringEventId": "3hossb5qh89fhsvou3so0u5rhg",
+   "originalStartTime": {
+    "dateTime": "2013-05-28T23:30:00+02:00"
+   },
+   "iCalUID": "3hossb5qh89fhsvou3so0u5rhg@google.com",
+   "sequence": 4,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTgwOTY0MDY3MDAwMA\"",
+   "id": "r4gv4ht53e9rqgg9jvvgf5i9cs_20130529T061500Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cjRndjRodDUzZTlycWdnOWp2dmdmNWk5Y3NfMjAxMzA1MjlUMDYxNTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:27:10.000Z",
+   "updated": "2013-05-29T06:40:40.670Z",
+   "summary": "Douche",
+   "description": "+25 28 pouces",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-29T08:15:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-29T09:00:00+02:00"
+   },
+   "recurringEventId": "r4gv4ht53e9rqgg9jvvgf5i9cs",
+   "originalStartTime": {
+    "dateTime": "2013-05-29T08:15:00+02:00"
+   },
+   "iCalUID": "r4gv4ht53e9rqgg9jvvgf5i9cs@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTgwOTY1NjkzNTAwMA\"",
+   "id": "l7b3n60kla2ge18qducn1jm4r8_20130529T050000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bDdiM242MGtsYTJnZTE4cWR1Y24xam00cjhfMjAxMzA1MjlUMDUwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:26:29.000Z",
+   "updated": "2013-05-29T06:40:56.935Z",
+   "summary": "Petit dej",
+   "description": "+33 Couché trop tard",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-29T07:00:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-29T08:15:00+02:00"
+   },
+   "recurringEventId": "l7b3n60kla2ge18qducn1jm4r8",
+   "originalStartTime": {
+    "dateTime": "2013-05-29T07:00:00+02:00"
+   },
+   "iCalUID": "l7b3n60kla2ge18qducn1jm4r8@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTgxMDkxMzg3MzAwMA\"",
+   "id": "b3c1977fj9rbpv9p2sadhqaf60_20130529T070000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YjNjMTk3N2ZqOXJicHY5cDJzYWRocWFmNjBfMjAxMzA1MjlUMDcwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:29:34.000Z",
+   "updated": "2013-05-29T07:01:53.873Z",
+   "summary": "Transport",
+   "description": "+2",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-29T09:00:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-29T09:45:00+02:00"
+   },
+   "recurringEventId": "b3c1977fj9rbpv9p2sadhqaf60",
+   "originalStartTime": {
+    "dateTime": "2013-05-29T09:00:00+02:00"
+   },
+   "iCalUID": "b3c1977fj9rbpv9p2sadhqaf60@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTgyODcyNTk4ODAwMA\"",
+   "id": "713ugn0s3crk6v360mnkh7lrvk_20130529T120000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NzEzdWduMHMzY3JrNnYzNjBtbmtoN2xydmtfMjAxMzA1MjlUMTIwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-05-27T11:16:22.000Z",
+   "updated": "2013-05-29T11:58:45.988Z",
+   "summary": "Travail",
+   "description": "-1",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-29T14:00:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-29T18:00:00+02:00"
+   },
+   "recurringEventId": "713ugn0s3crk6v360mnkh7lrvk",
+   "originalStartTime": {
+    "dateTime": "2013-05-29T14:00:00+02:00"
+   },
+   "iCalUID": "713ugn0s3crk6v360mnkh7lrvk@google.com",
+   "sequence": 0,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTg0Nzk4MzIxNTAwMA\"",
+   "id": "913109ldfcpuis3uabdj6kvnrg_20130529T074500Z",
+   "status": "tentative",
+   "htmlLink": "https://www.google.com/calendar/event?eid=OTEzMTA5bGRmY3B1aXMzdWFiZGo2a3ZucmdfMjAxMzA1MjlUMDc0NTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:29:43.000Z",
+   "updated": "2013-05-29T17:19:43.215Z",
+   "summary": "Travail",
+   "description": "+0",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-29T09:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-05-29T12:00:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurringEventId": "913109ldfcpuis3uabdj6kvnrg",
+   "originalStartTime": {
+    "dateTime": "2013-05-29T09:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "iCalUID": "913109ldfcpuis3uabdj6kvnrg@google.com",
+   "sequence": 6,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTg2NDUzNjQ3MTAwMA\"",
+   "id": "u4bc49seevqkk8l3nt97n5f880_20130529T193000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=dTRiYzQ5c2VldnFrazhsM250OTduNWY4ODBfMjAxMzA1MjlUMTkzMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:32:57.000Z",
+   "updated": "2013-05-29T21:55:36.471Z",
+   "summary": "Repas",
+   "description": "+50",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-29T21:30:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "end": {
+    "dateTime": "2013-05-29T22:45:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "recurringEventId": "u4bc49seevqkk8l3nt97n5f880",
+   "originalStartTime": {
+    "dateTime": "2013-05-29T21:30:00+02:00",
+    "timeZone": "Europe/Paris"
+   },
+   "iCalUID": "u4bc49seevqkk8l3nt97n5f880@google.com",
+   "sequence": 3,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTg2NDU0NjQ1ODAwMA\"",
+   "id": "9ig5sdlo87di47nc55umv1bd6k_20130529T204500Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=OWlnNXNkbG84N2RpNDduYzU1dW12MWJkNmtfMjAxMzA1MjlUMjA0NTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-05-26T19:51:15.000Z",
+   "updated": "2013-05-29T21:55:46.458Z",
+   "summary": "Vaisselle & rangement",
+   "description": "+inf",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-29T22:45:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-29T23:00:00+02:00"
+   },
+   "recurringEventId": "9ig5sdlo87di47nc55umv1bd6k",
+   "originalStartTime": {
+    "dateTime": "2013-05-29T22:45:00+02:00"
+   },
+   "iCalUID": "9ig5sdlo87di47nc55umv1bd6k@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTg2NDY0MDI1NTAwMA\"",
+   "id": "3hossb5qh89fhsvou3so0u5rhg_20130529T213000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=M2hvc3NiNXFoODlmaHN2b3Uzc28wdTVyaGdfMjAxMzA1MjlUMjEzMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:22:41.000Z",
+   "updated": "2013-05-29T21:57:20.255Z",
+   "summary": "Sommeil",
+   "description": "+28",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-29T23:30:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-30T07:00:00+02:00"
+   },
+   "recurringEventId": "3hossb5qh89fhsvou3so0u5rhg",
+   "originalStartTime": {
+    "dateTime": "2013-05-29T23:30:00+02:00"
+   },
+   "iCalUID": "3hossb5qh89fhsvou3so0u5rhg@google.com",
+   "sequence": 4,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTg5NTA2MTYzNjAwMA\"",
+   "id": "l7b3n60kla2ge18qducn1jm4r8_20130530T050000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bDdiM242MGtsYTJnZTE4cWR1Y24xam00cjhfMjAxMzA1MzBUMDUwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:26:29.000Z",
+   "updated": "2013-05-30T06:24:21.636Z",
+   "summary": "Petit dej",
+   "description": "+34 Trop fatigué",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-30T07:00:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-30T08:15:00+02:00"
+   },
+   "recurringEventId": "l7b3n60kla2ge18qducn1jm4r8",
+   "originalStartTime": {
+    "dateTime": "2013-05-30T07:00:00+02:00"
+   },
+   "iCalUID": "l7b3n60kla2ge18qducn1jm4r8@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTg5NjMyMDY5NTAwMA\"",
+   "id": "r4gv4ht53e9rqgg9jvvgf5i9cs_20130530T061500Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cjRndjRodDUzZTlycWdnOWp2dmdmNWk5Y3NfMjAxMzA1MzBUMDYxNTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:27:10.000Z",
+   "updated": "2013-05-30T06:45:20.695Z",
+   "summary": "Douche",
+   "description": "+27",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-30T08:15:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-30T09:00:00+02:00"
+   },
+   "recurringEventId": "r4gv4ht53e9rqgg9jvvgf5i9cs",
+   "originalStartTime": {
+    "dateTime": "2013-05-30T08:15:00+02:00"
+   },
+   "iCalUID": "r4gv4ht53e9rqgg9jvvgf5i9cs@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTkwMTc3Njg4MTAwMA\"",
+   "id": "b3c1977fj9rbpv9p2sadhqaf60_20130530T070000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YjNjMTk3N2ZqOXJicHY5cDJzYWRocWFmNjBfMjAxMzA1MzBUMDcwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:29:34.000Z",
+   "updated": "2013-05-30T08:16:16.881Z",
+   "summary": "Transport",
+   "description": "+3",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-30T09:00:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-30T09:45:00+02:00"
+   },
+   "recurringEventId": "b3c1977fj9rbpv9p2sadhqaf60",
+   "originalStartTime": {
+    "dateTime": "2013-05-30T09:00:00+02:00"
+   },
+   "iCalUID": "b3c1977fj9rbpv9p2sadhqaf60@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTkwMTc4OTc0MzAwMA\"",
+   "id": "913109ldfcpuis3uabdj6kvnrg_20130530T074500Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=OTEzMTA5bGRmY3B1aXMzdWFiZGo2a3ZucmdfMjAxMzA1MzBUMDc0NTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:29:43.000Z",
+   "updated": "2013-05-30T08:16:29.743Z",
+   "summary": "Travail",
+   "description": "-5 RER A très fluide",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-30T09:45:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-30T12:00:00+02:00"
+   },
+   "recurringEventId": "913109ldfcpuis3uabdj6kvnrg",
+   "originalStartTime": {
+    "dateTime": "2013-05-30T09:45:00+02:00"
+   },
+   "iCalUID": "913109ldfcpuis3uabdj6kvnrg@google.com",
+   "sequence": 5,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTkxODQ2NTE1MjAwMA\"",
+   "id": "713ugn0s3crk6v360mnkh7lrvk_20130530T120000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NzEzdWduMHMzY3JrNnYzNjBtbmtoN2xydmtfMjAxMzA1MzBUMTIwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-05-27T11:16:22.000Z",
+   "updated": "2013-05-30T12:54:25.152Z",
+   "summary": "Travail",
+   "description": "+25 Repas à l'extérieur, arriver à indenter un fichier xml avec sublime",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-30T14:00:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-30T18:00:00+02:00"
+   },
+   "recurringEventId": "713ugn0s3crk6v360mnkh7lrvk",
+   "originalStartTime": {
+    "dateTime": "2013-05-30T14:00:00+02:00"
+   },
+   "iCalUID": "713ugn0s3crk6v360mnkh7lrvk@google.com",
+   "sequence": 0,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTk0OTMwOTgyODAwMA\"",
+   "id": "3hossb5qh89fhsvou3so0u5rhg_20130530T213000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=M2hvc3NiNXFoODlmaHN2b3Uzc28wdTVyaGdfMjAxMzA1MzBUMjEzMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:22:41.000Z",
+   "updated": "2013-05-30T21:28:29.828Z",
+   "summary": "Sommeil",
+   "description": "-1",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-30T23:30:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-31T07:00:00+02:00"
+   },
+   "recurringEventId": "3hossb5qh89fhsvou3so0u5rhg",
+   "originalStartTime": {
+    "dateTime": "2013-05-30T23:30:00+02:00"
+   },
+   "iCalUID": "3hossb5qh89fhsvou3so0u5rhg@google.com",
+   "sequence": 4,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTk3ODQyMTgzMzAwMA\"",
+   "id": "l7b3n60kla2ge18qducn1jm4r8_20130531T050000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bDdiM242MGtsYTJnZTE4cWR1Y24xam00cjhfMjAxMzA1MzFUMDUwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:26:29.000Z",
+   "updated": "2013-05-31T05:33:41.833Z",
+   "summary": "Petit dej",
+   "description": "+17 Envie de dormir",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-31T07:00:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-31T08:15:00+02:00"
+   },
+   "recurringEventId": "l7b3n60kla2ge18qducn1jm4r8",
+   "originalStartTime": {
+    "dateTime": "2013-05-31T07:00:00+02:00"
+   },
+   "iCalUID": "l7b3n60kla2ge18qducn1jm4r8@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTk4MjIzMjA2MzAwMA\"",
+   "id": "r4gv4ht53e9rqgg9jvvgf5i9cs_20130531T061500Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cjRndjRodDUzZTlycWdnOWp2dmdmNWk5Y3NfMjAxMzA1MzFUMDYxNTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:27:10.000Z",
+   "updated": "2013-05-31T06:37:12.063Z",
+   "summary": "Douche",
+   "description": "+22",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-31T08:15:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-31T09:00:00+02:00"
+   },
+   "recurringEventId": "r4gv4ht53e9rqgg9jvvgf5i9cs",
+   "originalStartTime": {
+    "dateTime": "2013-05-31T08:15:00+02:00"
+   },
+   "iCalUID": "r4gv4ht53e9rqgg9jvvgf5i9cs@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM2OTk4Mzc1NjY3NTAwMA\"",
+   "id": "b3c1977fj9rbpv9p2sadhqaf60_20130531T070000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YjNjMTk3N2ZqOXJicHY5cDJzYWRocWFmNjBfMjAxMzA1MzFUMDcwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-03-29T21:29:34.000Z",
+   "updated": "2013-05-31T07:02:36.675Z",
+   "summary": "Transport",
+   "description": "+3",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-31T09:00:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-31T09:45:00+02:00"
+   },
+   "recurringEventId": "b3c1977fj9rbpv9p2sadhqaf60",
+   "originalStartTime": {
+    "dateTime": "2013-05-31T09:00:00+02:00"
+   },
+   "iCalUID": "b3c1977fj9rbpv9p2sadhqaf60@google.com",
+   "sequence": 1,
+   "reminders": {
+    "useDefault": true
+   }
+  },
+  {
+
+   "kind": "calendar#event",
+   "etag": "\"78Bu1G8fWt0vPGZK2Ckfad3ZtNE/MTM3MDAwMjkzMjYxMTAwMA\"",
+   "id": "713ugn0s3crk6v360mnkh7lrvk_20130531T120000Z",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NzEzdWduMHMzY3JrNnYzNjBtbmtoN2xydmtfMjAxMzA1MzFUMTIwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+   "created": "2013-05-27T11:16:22.000Z",
+   "updated": "2013-05-31T12:22:12.611Z",
+   "summary": "Travail",
+   "description": "+22",
+   "creator": {
+    "email": "christophe.pele@gmail.com"
+   },
+   "organizer": {
+    "email": "67sijt66lsm2knrachvdh5od4k@group.calendar.google.com",
+    "displayName": "Planning 2",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2013-05-31T14:00:00+02:00"
+   },
+   "end": {
+    "dateTime": "2013-05-31T18:00:00+02:00"
+   },
+   "recurringEventId": "713ugn0s3crk6v360mnkh7lrvk",
+   "originalStartTime": {
+    "dateTime": "2013-05-31T14:00:00+02:00"
+   },
+   "iCalUID": "713ugn0s3crk6v360mnkh7lrvk@google.com",
+   "sequence": 0,
+   "reminders": {
+    "useDefault": true
+   }
+  }
+ ]
+}

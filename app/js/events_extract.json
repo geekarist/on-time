@@ -1,60 +1,4 @@
-describe('Timesheet', function() {
-	beforeEach(module('onTime'))
-
-	var scope
-	var httpBackend
-	var timesheet
-
-	beforeEach(inject(function($rootScope, $controller, $injector) {
-		scope = $rootScope.$new()
-		httpBackend = $injector.get('$httpBackend');
-		timesheet = $controller(Timesheet, {$scope: scope})
-	}))
-
-	afterEach(function() {
-		httpBackend.verifyNoOutstandingExpectation();
-		httpBackend.verifyNoOutstandingRequest();
-	});
-
-	it('should load the weeks to show for current month', function() {
-		// GIVEN
-		var clock = sinon.useFakeTimers(Date.parse('2013/06/01 12:00'))
-		httpBackend.expectGET('/js/events_extract.json').respond(201, {items: []});
-
-		// WHEN
-		scope.loadWeeksForCurrentMonth()
-		httpBackend.flush()
-		
-		// THEN
-		expect(scope.weeks.length).toEqual(5)
-		scope.weeks.forEach(function(w) {
-			expect(w.length).toEqual(7)
-		})
-		expect(scope.weeks[0][0].day).toEqual('27')
-		expect(scope.weeks[0][0].date).toEqual('2013-05-27T00:00:00.000Z')
-		expect(scope.weeks[0][5].day).toEqual('1 juin')
-		expect(scope.weeks[0][5].date).toEqual('2013-06-01T00:00:00.000Z')
-		expect(scope.weeks[4][6].day).toEqual('30')
-		expect(scope.weeks[4][6].date).toEqual('2013-06-30T00:00:00.000Z')
-	})
-
-	it('should load the appointments for a given day', function() {
-		// GIVEN
-		var clock = sinon.useFakeTimers(Date.parse('2013/05/01 12:00'))
-		httpBackend.expectGET('/js/events_extract.json').respond(201, GIVEN_EVENTS);
-
-		// WHEN
-		scope.loadWeeksForCurrentMonth()
-		httpBackend.flush()
-
-		// THEN
-		expect(scope.weeks[4][2].events.length).toEqual(8)
-	})
-
-	it('should get the time, lateness and label of each appointment')
-})
-
-var GIVEN_EVENTS = {
+{
     "kind": "calendar#events",
     "summary": "Planning 2",
     "items": [
@@ -62,8 +6,7 @@ var GIVEN_EVENTS = {
             "kind": "calendar#event",
             "summary": "Repas",
             "start": {"dateTime": "2013-05-29T21:30:00+02:00", "timeZone": "Europe/Paris"},
-            "end": {"dateTime": "2013-05-29T22:45:00+02:00", "timeZone": "Europe/Paris"
-            }
+            "end": {"dateTime": "2013-05-29T22:45:00+02:00", "timeZone": "Europe/Paris"}
         },
         {
             "kind": "calendar#event",
@@ -103,8 +46,7 @@ var GIVEN_EVENTS = {
             "summary": "Travail",
             "description": "+0",
             "start": {"dateTime": "2013-05-29T09:45:00+02:00", "timeZone": "Europe/Paris"},
-            "end": {"dateTime": "2013-05-29T12:00:00+02:00", "timeZone": "Europe/Paris"
-            }
+            "end": {"dateTime": "2013-05-29T12:00:00+02:00", "timeZone": "Europe/Paris"}
         },
         {
             "kind": "calendar#event",
@@ -112,8 +54,7 @@ var GIVEN_EVENTS = {
             "summary": "Repas",
             "description": "+50",
             "start": {"dateTime": "2013-05-29T21:30:00+02:00", "timeZone": "Europe/Paris"},
-            "end": {"dateTime": "2013-05-29T22:45:00+02:00", "timeZone": "Europe/Paris"
-            }
+            "end": {"dateTime": "2013-05-29T22:45:00+02:00", "timeZone": "Europe/Paris"}
         },
         {
             "kind": "calendar#event",
@@ -129,7 +70,7 @@ var GIVEN_EVENTS = {
             "summary": "Sommeil",
             "description": "+28",
             "start": {"dateTime": "2013-05-29T23:30:00+02:00"},
-            "end": {"dateTime": "2013-05-30T07:00:00+02:00"},
+            "end": {"dateTime": "2013-05-30T07:00:00+02:00"}
         }
     ]
 }

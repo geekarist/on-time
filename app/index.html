@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="components/bootstrap/css/bootstrap.css" media="screen" />
 </head>
 
-<body ng-controller="Timesheet" ng-init="setWeeksForCurrentMonth()">
+<body ng-controller="Timesheet" ng-init="loadWeeksForCurrentMonth()">
 
     <table class="table" style="margin: 4em; width: 80em">
         <tr>
@@ -23,6 +23,11 @@
         <tr ng-repeat="w in weeks">
             <td ng-repeat="d in w">
                 {{d.day}}
+                <ul>
+                    <li ng-repeat="e in d.events">
+                        {{e.summary}}
+                    </li>
+                </ul>
             </td>
         </tr>
 
