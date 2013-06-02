@@ -1,0 +1,4 @@
+3. Show lateness of each event in tooltip
+4. Show time of each event in tooltip
+x 2013-06-02 1. Show event in red if late
+x 2013-06-02 2. Show event in green if on time

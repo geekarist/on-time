@@ -1,6 +1,17 @@
 function Timesheet($scope, $http) {
 	$scope.DAYS = DAYS
 
+	$scope.loadWeeksForCurrentMonth = function() {
+		$http.get('/js/events_extract.json').success(function(calendar) {
+			var firstMondayToShow = getFirstMondayToShow()
+			var lastSundayToShow = getLastSundayToShow()
+			$scope.calendarGrid = spreadCalendarEventsBetween(
+				calendar, firstMondayToShow, lastSundayToShow)
+		}).error(function(error) {
+			console.log('Error while getting events:', error)
+		})
+	}
+
 	function getMidnight(date) {
 		var tzOffset = date.getTimezoneOffset();
 		date.setHours(0, 0, 0)
@@ -41,8 +52,19 @@ function Timesheet($scope, $http) {
 	}
 
 	function toLateness(calendarEvent) {
+		var description = calendarEvent.description
+		var duration
+		if (description.match(/^\+inf/)) {
+			duration = Number.MAX_VALUE
+		} else {
+			var durationLine = description.match(/^([+-][0-9]+)/g)
+			if (durationLine) {
+				duration = parseInt(durationLine)
+			}
+		}
 		return {
-			event: calendarEvent.summary
+			event: calendarEvent.summary,
+			duration: duration
 		}
 	}
 
@@ -83,14 +105,5 @@ function Timesheet($scope, $http) {
 		lastDayOfCurrentMonth.setDate(lastDayOfCurrentMonth.getDate() - 1)
 		var lastSundayToShow = getNextSunday(lastDayOfCurrentMonth)
 		return lastSundayToShow
-	}
-
-	$scope.loadWeeksForCurrentMonth = function() {
-		$http.get('/js/events_extract.json').success(function(calendar) {
-			var firstMondayToShow = getFirstMondayToShow()
-			var lastSundayToShow = getLastSundayToShow()
-			$scope.calendarGrid = spreadCalendarEventsBetween(
-				calendar, firstMondayToShow, lastSundayToShow)
-		})
 	}
 }

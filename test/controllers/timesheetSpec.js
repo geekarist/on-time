@@ -38,7 +38,7 @@ describe('Timesheet', function() {
 		expect(scope.calendarGrid[4][6].date).toEqual('2013-06-30T00:00:00.000Z')
 	})
 
-	it('should load the latenesses for a given day (TODO: with duration and reason)', function() {
+	it('should load the latenesses for a given day (with duration TODO: and reason)', function() {
 		// GIVEN
 		var clock = sinon.useFakeTimers(Date.parse('2013/05/01 12:00'))
 		httpBackend.expectGET('/js/events_extract.json').respond(201, GIVEN_EVENTS);
@@ -50,11 +50,11 @@ describe('Timesheet', function() {
 		// THEN
 		expect(scope.calendarGrid[4][2].latenesses.length).toEqual(8)
         expect(scope.calendarGrid[4][2].latenesses[2].event).toEqual('Transport')
-        // expect(scope.calendarGrid[4][2].latenesses[2].duration).toEqual(2)
-        // expect(scope.calendarGrid[4][2].latenesses[2].reason).toEqual('Couché trop tard')
+        expect(scope.calendarGrid[4][2].latenesses[2].duration).toEqual(2)
+        expect(scope.calendarGrid[4][2].latenesses[3].event).toEqual('Travail')
+        expect(scope.calendarGrid[4][2].latenesses[3].duration).toEqual(-1)
         expect(scope.calendarGrid[4][2].latenesses[6].event).toEqual('Vaisselle & rangement')
-        // expect(scope.calendarGrid[4][2].latenesses[6].duration).toEqual(Number.MAX_VALUE)
-        // expect(scope.calendarGrid[4][2].latenesses[6].reason).toEqual('')
+        expect(scope.calendarGrid[4][2].latenesses[6].duration).toEqual(Number.MAX_VALUE)
 	})
 
 })
@@ -98,7 +98,7 @@ var GIVEN_EVENTS = {
             "kind": "calendar#event",
             "htmlLink": "https://www.google.com/calendar/event?eid=NzEzdWduMHMzY3JrNnYzNjBtbmtoN2xydmtfMjAxMzA1MjlUMTIwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
             "summary": "Travail",
-            "description": "-1",
+            "description": "-1 RER A très fluide aujourd'hui",
             "start": {"dateTime": "2013-05-29T14:00:00+02:00"},
             "end": {"dateTime": "2013-05-29T18:00:00+02:00"}
         },
