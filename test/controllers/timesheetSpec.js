@@ -26,19 +26,19 @@ describe('Timesheet', function() {
 		httpBackend.flush()
 		
 		// THEN
-		expect(scope.weeks.length).toEqual(5)
-		scope.weeks.forEach(function(w) {
+		expect(scope.calendarGrid.length).toEqual(5)
+		scope.calendarGrid.forEach(function(w) {
 			expect(w.length).toEqual(7)
 		})
-		expect(scope.weeks[0][0].day).toEqual('27')
-		expect(scope.weeks[0][0].date).toEqual('2013-05-27T00:00:00.000Z')
-		expect(scope.weeks[0][5].day).toEqual('1 juin')
-		expect(scope.weeks[0][5].date).toEqual('2013-06-01T00:00:00.000Z')
-		expect(scope.weeks[4][6].day).toEqual('30')
-		expect(scope.weeks[4][6].date).toEqual('2013-06-30T00:00:00.000Z')
+		expect(scope.calendarGrid[0][0].day).toEqual('27')
+		expect(scope.calendarGrid[0][0].date).toEqual('2013-05-27T00:00:00.000Z')
+		expect(scope.calendarGrid[0][5].day).toEqual('1 juin')
+		expect(scope.calendarGrid[0][5].date).toEqual('2013-06-01T00:00:00.000Z')
+		expect(scope.calendarGrid[4][6].day).toEqual('30')
+		expect(scope.calendarGrid[4][6].date).toEqual('2013-06-30T00:00:00.000Z')
 	})
 
-	it('should load the appointments for a given day', function() {
+	it('should load the latenesses for a given day (TODO: with duration and reason)', function() {
 		// GIVEN
 		var clock = sinon.useFakeTimers(Date.parse('2013/05/01 12:00'))
 		httpBackend.expectGET('/js/events_extract.json').respond(201, GIVEN_EVENTS);
@@ -48,10 +48,15 @@ describe('Timesheet', function() {
 		httpBackend.flush()
 
 		// THEN
-		expect(scope.weeks[4][2].events.length).toEqual(8)
+		expect(scope.calendarGrid[4][2].latenesses.length).toEqual(8)
+        expect(scope.calendarGrid[4][2].latenesses[2].event).toEqual('Transport')
+        // expect(scope.calendarGrid[4][2].latenesses[2].duration).toEqual(2)
+        // expect(scope.calendarGrid[4][2].latenesses[2].reason).toEqual('Couché trop tard')
+        expect(scope.calendarGrid[4][2].latenesses[6].event).toEqual('Vaisselle & rangement')
+        // expect(scope.calendarGrid[4][2].latenesses[6].duration).toEqual(Number.MAX_VALUE)
+        // expect(scope.calendarGrid[4][2].latenesses[6].reason).toEqual('')
 	})
 
-	it('should get the time, lateness and label of each appointment')
 })
 
 var GIVEN_EVENTS = {

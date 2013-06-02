@@ -40,37 +40,57 @@ function Timesheet($scope, $http) {
 		})
 	}
 
+	function toLateness(calendarEvent) {
+		return {
+			event: calendarEvent.summary
+		}
+	}
+
+	function spreadCalendarEventsBetween(calendar, firstMondayToShow, lastSundayToShow) {
+		var calendarGrid = []
+		var w = []
+		for (var d = firstMondayToShow; 
+			d.getTime() <= lastSundayToShow.getTime(); 
+			d.setDate(d.getDate() + 1)) {
+			if (w.length == 0) {
+				calendarGrid.push(w)
+			}
+			w.push({
+				day: d.getDate() == 1 ? '1 '+MONTH_NAMES[d.getMonth()] : ''+d.getDate(),
+				date: d.toISOString(),
+				latenesses: getEvents(calendar, d).map(function(event) {
+					return toLateness(event)
+				})
+			})
+			if (w.length == 7) {
+				w = []
+			}
+		}
+		return calendarGrid
+	}
+
+	function getFirstMondayToShow() {
+		var firstDayOfCurrentMonth = getMidnight(new Date())
+		firstDayOfCurrentMonth.setDate(1)
+		var firstMondayToShow = getPreviousMonday(firstDayOfCurrentMonth)
+		return firstMondayToShow
+	}
+
+	function getLastSundayToShow() {
+		var lastDayOfCurrentMonth = getMidnight(new Date())
+		lastDayOfCurrentMonth.setMonth(lastDayOfCurrentMonth.getMonth() + 1)
+		lastDayOfCurrentMonth.setDate(1)
+		lastDayOfCurrentMonth.setDate(lastDayOfCurrentMonth.getDate() - 1)
+		var lastSundayToShow = getNextSunday(lastDayOfCurrentMonth)
+		return lastSundayToShow
+	}
+
 	$scope.loadWeeksForCurrentMonth = function() {
 		$http.get('/js/events_extract.json').success(function(calendar) {
-			var firstDayOfCurrentMonth = getMidnight(new Date())
-			firstDayOfCurrentMonth.setDate(1)
-
-			var lastDayOfCurrentMonth = getMidnight(new Date())
-			lastDayOfCurrentMonth.setMonth(lastDayOfCurrentMonth.getMonth() + 1)
-			lastDayOfCurrentMonth.setDate(1)
-			lastDayOfCurrentMonth.setDate(lastDayOfCurrentMonth.getDate() - 1)
-
-			var firstMondayToShow = getPreviousMonday(firstDayOfCurrentMonth)
-			var lastSundayToShow = getNextSunday(lastDayOfCurrentMonth)
-
-			var weeks = []
-			var w = []
-			for (var d = firstMondayToShow; 
-				d.getTime() <= lastSundayToShow.getTime(); 
-				d.setDate(d.getDate() + 1)) {
-				if (w.length == 0) {
-					weeks.push(w)
-				}
-				w.push({
-					day: d.getDate() == 1 ? '1 '+MONTH_NAMES[d.getMonth()] : ''+d.getDate(),
-					date: d.toISOString(),
-					events: getEvents(calendar, d)
-				})
-				if (w.length == 7) {
-					w = []
-				}
-			}
-			$scope.weeks = weeks
+			var firstMondayToShow = getFirstMondayToShow()
+			var lastSundayToShow = getLastSundayToShow()
+			$scope.calendarGrid = spreadCalendarEventsBetween(
+				calendar, firstMondayToShow, lastSundayToShow)
 		})
 	}
 }

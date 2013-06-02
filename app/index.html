@@ -20,12 +20,12 @@
             <th style="width:14%">{{DAYS.saturday}}</th>
             <th style="width:14%">{{DAYS.sunday}}</th>
         </tr>
-        <tr ng-repeat="w in weeks">
-            <td ng-repeat="d in w">
-                {{d.day}}
+        <tr ng-repeat="line in calendarGrid">
+            <td ng-repeat="cell in line">
+                {{cell.day}}
                 <ul>
-                    <li ng-repeat="e in d.events">
-                        {{e.summary}}
+                    <li ng-repeat="lateness in cell.latenesses">
+                        {{lateness.event}}
                     </li>
                 </ul>
             </td>
