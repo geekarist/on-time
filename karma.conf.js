@@ -12,6 +12,7 @@ files = [
   JASMINE_ADAPTER,
   'app/components/angular-1.0.7/angular.js',
   'app/components/angular-1.0.7/angular-*.js',
+  'app/components/angular-ui-bootstrap-0.3.0/ui-bootstrap-0.3.0.js',
   'app/js/**/*.js',
   'test/**/*Spec.js',
   { pattern: 'node_modules/sinon/pkg/sinon.js', watched: false, included: true }

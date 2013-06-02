@@ -59,6 +59,16 @@ describe('Timesheet', function() {
 
 })
 
+var CLIENT_ID = 'xx'
+var API_KEY = 'AIzaSyCdGe4hL_v5Z4EET0mqcW-wEUPL6zow9Ko'
+// var CALENDAR_ID = '67sijt66lsm2knrachvdh5od4k@group.calendar.google.com'
+// var CALENDAR_ID = '67sijt66lsm2knrachvdh5od4k%40group.calendar.google.com'
+var SCOPES = 'https://www.googleapis.com/auth/calendar';
+var CALENDAR_ID = 'primary'
+var CALENDAR_EVENTS_LIST_URL = 
+    'https://www.googleapis.com/calendar/v3/calendars/' + CALENDAR_ID
+    + '/events?key=' + API_KEY
+
 var GIVEN_EVENTS = {
     "kind": "calendar#events",
     "summary": "Planning 2",
