@@ -10,7 +10,11 @@
 
 <body ng-controller="Timesheet" ng-init="loadWeeksForCurrentMonth()">
 
-    <table class="table" style="margin: 4em; width: 80em">
+    <p class="text-center" ng-hide="{{accessToken}}" style="margin-top: 3em">
+        <a href="{{loginUrl}}">Log in using your google account</a>
+    </p>
+
+    <table ng-show="{{accessToken}}" class="table" style="margin: 4em; width: 80em">
         <tr>
             <th style="width:14%">{{DAYS.monday}}</th>
             <th style="width:14%">{{DAYS.tuesday}}</th>
@@ -34,7 +38,6 @@
                 </ul>
             </td>
         </tr>
-
     </table>
 
     <script src="http://code.jquery.com/jquery.js"></script>
@@ -44,7 +47,6 @@
     <script src="js/messages.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers/timesheet.js"></script>
-    <script src="https://apis.google.com/js/client.js"></script>
 
 </body>
 </html>

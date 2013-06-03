@@ -1,4 +1,4 @@
-function Timesheet($scope, $http) {
+function Timesheet($scope, $http, $routeParams) {
 	$scope.DAYS = DAYS
 
     var CLIENT_ID = '847847973603-krmib75bv3djnfui1bdfp2beppo4ovaq.apps.googleusercontent.com'
@@ -11,18 +11,25 @@ function Timesheet($scope, $http) {
         'https://www.googleapis.com/calendar/v3/calendars/' + CALENDAR_ID
         + '/events?key=' + API_KEY
 
-	$scope.loadWeeksForCurrentMonth = function() {
-        gapi.auth.authorize({'client_id': CLIENT_ID, 'scope': SCOPE}, function() {
-            $http.get('/js/events_extract.json').success(function(calendar) {
-                var firstMondayToShow = getFirstMondayToShow()
-                var lastSundayToShow = getLastSundayToShow()
-                $scope.calendarGrid = spreadCalendarEventsBetween(
-                    calendar, firstMondayToShow, lastSundayToShow)
-            }).error(function(error) {
-                console.log('Error while getting events:', error)
-            })
-        })
-	}
+    $scope.loginUrl = 
+    	'https://accounts.google.com/o/oauth2/auth' 
+    		+ '?response_type=token' 
+    		+ '&client_id=' + CLIENT_ID
+    		+ '&scope=' + SCOPE
+    		+ '&redirect_uri=' + 'http://localhost:8000'
+
+    $scope.accessToken = $routeParams.accessToken
+
+    $scope.loadWeeksForCurrentMonth = function() {
+    	$http.get('/js/events_extract.json').success(function(calendar) {
+    		var firstMondayToShow = getFirstMondayToShow()
+    		var lastSundayToShow = getLastSundayToShow()
+    		$scope.calendarGrid = spreadCalendarEventsBetween(
+    			calendar, firstMondayToShow, lastSundayToShow)
+    	}).error(function(error) {
+    		console.log('Error while getting events:', error)
+    	})
+    }
 
 	function getMidnight(date) {
 		var tzOffset = date.getTimezoneOffset();
