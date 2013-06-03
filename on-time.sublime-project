@@ -4,7 +4,6 @@
 		{
 			"folder_exclude_patterns":
 			[
-				"components",
 				"node_modules/"
 			],
 			"path": "."

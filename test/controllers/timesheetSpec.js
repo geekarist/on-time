@@ -24,7 +24,7 @@ describe('Timesheet', function() {
 		// WHEN
 		scope.loadWeeksForCurrentMonth()
 		httpBackend.flush()
-		
+
 		// THEN
 		expect(scope.calendarGrid.length).toEqual(5)
 		scope.calendarGrid.forEach(function(w) {
@@ -59,13 +59,13 @@ describe('Timesheet', function() {
 
 })
 
-var CLIENT_ID = 'xx'
+var CLIENT_ID = '847847973603-krmib75bv3djnfui1bdfp2beppo4ovaq.apps.googleusercontent.com'
 var API_KEY = 'AIzaSyCdGe4hL_v5Z4EET0mqcW-wEUPL6zow9Ko'
 // var CALENDAR_ID = '67sijt66lsm2knrachvdh5od4k@group.calendar.google.com'
 // var CALENDAR_ID = '67sijt66lsm2knrachvdh5od4k%40group.calendar.google.com'
-var SCOPES = 'https://www.googleapis.com/auth/calendar';
+var SCOPE = 'https://www.googleapis.com/auth/calendar';
 var CALENDAR_ID = 'primary'
-var CALENDAR_EVENTS_LIST_URL = 
+var CALENDAR_EVENTS_LIST_URL =
     'https://www.googleapis.com/calendar/v3/calendars/' + CALENDAR_ID
     + '/events?key=' + API_KEY
 
