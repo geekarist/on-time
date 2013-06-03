@@ -1,4 +1,4 @@
-function Timesheet($scope, $http, $routeParams) {
+function Timesheet($scope, $http, $location) {
 	$scope.DAYS = DAYS
 
     var CLIENT_ID = '847847973603-krmib75bv3djnfui1bdfp2beppo4ovaq.apps.googleusercontent.com'
@@ -18,7 +18,11 @@ function Timesheet($scope, $http, $routeParams) {
     		+ '&scope=' + SCOPE
     		+ '&redirect_uri=' + 'http://localhost:8000'
 
-    $scope.accessToken = $routeParams.accessToken
+
+    $scope.$watch('location.search()', function() {
+    	console.log($location)
+	    $scope.accessToken = ($location.search()).access_token
+	}, true)
 
     $scope.loadWeeksForCurrentMonth = function() {
     	$http.get('/js/events_extract.json').success(function(calendar) {
