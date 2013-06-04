@@ -3,10 +3,8 @@ function Timesheet($scope, $http, $location) {
 
 	var CLIENT_ID = '847847973603-krmib75bv3djnfui1bdfp2beppo4ovaq.apps.googleusercontent.com'
 	var API_KEY = 'AIzaSyCdGe4hL_v5Z4EET0mqcW-wEUPL6zow9Ko'
-	// var CALENDAR_ID = '67sijt66lsm2knrachvdh5od4k@group.calendar.google.com'
-	// var CALENDAR_ID = '67sijt66lsm2knrachvdh5od4k%40group.calendar.google.com'
+	var CALENDAR_ID = '67sijt66lsm2knrachvdh5od4k%40group.calendar.google.com'
 	var SCOPE = 'https://www.googleapis.com/auth/calendar';
-	var CALENDAR_ID = 'primary'
 	var CALENDAR_EVENTS_LIST_URL =
 		'https://www.googleapis.com/calendar/v3/calendars/' + CALENDAR_ID
 		+ '/events'
@@ -25,7 +23,8 @@ function Timesheet($scope, $http, $location) {
 	}, true)
 
 	function loadWeeksForCurrentMonth() {
-		$http.get(CALENDAR_EVENTS_LIST_URL + '?access_token=' + $scope.accessToken)
+		$http.jsonp(CALENDAR_EVENTS_LIST_URL 
+			+ '?access_token=' + $scope.accessToken + '&callback=JSON_CALLBACK')
 		.success(function(calendar) {
 			var firstMondayToShow = getFirstMondayToShow()
 			var lastSundayToShow = getLastSundayToShow()
@@ -39,7 +38,9 @@ function Timesheet($scope, $http, $location) {
 
 	function loadAccessTokenFromUrl() {
 		var path = $location.path().split('/')[1]
-		var attributes = path && path.match(/&/) && path.split('&') || []
+		var attributes = 
+			(path && path.match(/&/) && path.split('&')) 
+			|| [path]
 		var attrMap = {}
 		attributes.forEach(function(element) {
 			if (!element.match(/\=/)) {
@@ -81,13 +82,14 @@ function Timesheet($scope, $http, $location) {
 	}
 
 	function getEvents(calendar, date) {
-		return calendar.items.filter(function(event) {
-			if (sameDay(new Date(event.start.dateTime), date)
+		return calendar.items && calendar.items.filter(function(event) {
+			if (event.start && event.start.dateTime 
+				&& sameDay(new Date(event.start.dateTime), date)
 				&& event.description
 				&& event.description.match(/^[+-]/)) {
 				return true
 			}
-		})
+		}) || []
 	}
 
 	function toLateness(calendarEvent) {
@@ -101,9 +103,11 @@ function Timesheet($scope, $http, $location) {
 				duration = parseInt(durationLine)
 			}
 		}
+		var start = calendarEvent.start.dateTime.split('T')[1].split('+')[0]
 		return {
 			event: calendarEvent.summary,
-			duration: duration
+			duration: duration,
+			startTime: start.replace(/:..$/, '')
 		}
 	}
 

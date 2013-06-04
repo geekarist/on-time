@@ -4,9 +4,11 @@ describe('Timesheet', function() {
 	var scope
 	var httpBackend
 	var timesheet
+    var location
 
-	beforeEach(inject(function($rootScope, $controller, $injector) {
-		scope = $rootScope.$new()
+	beforeEach(inject(function($rootScope, $controller, $location, $injector) {
+		location = $location
+        scope = $rootScope.$new()
 		httpBackend = $injector.get('$httpBackend');
 		timesheet = $controller(Timesheet, {$scope: scope})
 	}))
@@ -19,13 +21,15 @@ describe('Timesheet', function() {
 	it('should load the weeks to show for current month', function() {
 		// GIVEN
 		var clock = sinon.useFakeTimers(Date.parse('2013/06/01 12:00'))
-		httpBackend.expectGET('/js/events_extract.json').respond(201, {items: []});
+		httpBackend.expectJSONP(/.*/).respond(201, {items: []});
+        var givenAccessToken = "TOKEN"
 
 		// WHEN
-		scope.loadWeeksForCurrentMonth()
-		httpBackend.flush()
+        location.path('/access_token=' + givenAccessToken)
+        scope.$apply()
 
 		// THEN
+        httpBackend.flush()
 		expect(scope.calendarGrid.length).toEqual(5)
 		scope.calendarGrid.forEach(function(w) {
 			expect(w.length).toEqual(7)
@@ -38,36 +42,31 @@ describe('Timesheet', function() {
 		expect(scope.calendarGrid[4][6].date).toEqual('2013-06-30T00:00:00.000Z')
 	})
 
-	it('should load the latenesses for a given day (with duration TODO: and reason)', function() {
-		// GIVEN
-		var clock = sinon.useFakeTimers(Date.parse('2013/05/01 12:00'))
-		httpBackend.expectGET('/js/events_extract.json').respond(201, GIVEN_EVENTS);
+    it('should load the latenesses for a given day (with duration)', function() {
+        // GIVEN
+        var clock = sinon.useFakeTimers(Date.parse('2013/05/01 12:00'))
+        httpBackend.expectJSONP(/.*/).respond(201, GIVEN_EVENTS);
+        var givenAccessToken = "TOKEN"
 
-		// WHEN
-		scope.loadWeeksForCurrentMonth()
-		httpBackend.flush()
+        // WHEN
+        location.path('/access_token=' + givenAccessToken)
+        scope.$apply()
 
-		// THEN
-		expect(scope.calendarGrid[4][2].latenesses.length).toEqual(8)
+        // THEN
+        httpBackend.flush()
+        expect(scope.calendarGrid[4][2].latenesses.length).toEqual(8)
         expect(scope.calendarGrid[4][2].latenesses[2].event).toEqual('Transport')
         expect(scope.calendarGrid[4][2].latenesses[2].duration).toEqual(2)
+        expect(scope.calendarGrid[4][2].latenesses[2].startTime).toEqual('09:00')
         expect(scope.calendarGrid[4][2].latenesses[3].event).toEqual('Travail')
         expect(scope.calendarGrid[4][2].latenesses[3].duration).toEqual(-1)
+        expect(scope.calendarGrid[4][2].latenesses[3].startTime).toEqual('14:00')
         expect(scope.calendarGrid[4][2].latenesses[6].event).toEqual('Vaisselle & rangement')
         expect(scope.calendarGrid[4][2].latenesses[6].duration).toEqual(Number.MAX_VALUE)
-	})
+        expect(scope.calendarGrid[4][2].latenesses[6].startTime).toEqual('22:45')
+    })
 
 })
-
-var CLIENT_ID = '847847973603-krmib75bv3djnfui1bdfp2beppo4ovaq.apps.googleusercontent.com'
-var API_KEY = 'AIzaSyCdGe4hL_v5Z4EET0mqcW-wEUPL6zow9Ko'
-// var CALENDAR_ID = '67sijt66lsm2knrachvdh5od4k@group.calendar.google.com'
-// var CALENDAR_ID = '67sijt66lsm2knrachvdh5od4k%40group.calendar.google.com'
-var SCOPE = 'https://www.googleapis.com/auth/calendar';
-var CALENDAR_ID = 'primary'
-var CALENDAR_EVENTS_LIST_URL =
-    'https://www.googleapis.com/calendar/v3/calendars/' + CALENDAR_ID
-    + '/events?key=' + API_KEY
 
 var GIVEN_EVENTS = {
     "kind": "calendar#events",

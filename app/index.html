@@ -31,6 +31,7 @@
                         <a><span
                             tooltip="{{lateness.duration}} mn"
                             style="font-weight: {{(lateness.duration > 60) && 'bold' || 'medium'}}; color: {{(lateness.duration > 0) && 'red' || 'green'}}">
+                            {{lateness.startTime}}
                             {{lateness.event}}
                         </span></a>
                     </li>
