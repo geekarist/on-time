@@ -1,4 +1,4 @@
-3. Get events from google calendar
+3. Get events from google calendar cf. http://goo.gl/9W9u7
 4. Show lateness of each event in tooltip
 5. Show time of each event in tooltip
 x 2013-06-02 1. Show event in red if late

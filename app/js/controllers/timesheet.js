@@ -1,42 +1,55 @@
 function Timesheet($scope, $http, $location) {
 	$scope.DAYS = DAYS
 
-    var CLIENT_ID = '847847973603-krmib75bv3djnfui1bdfp2beppo4ovaq.apps.googleusercontent.com'
-    var API_KEY = 'AIzaSyCdGe4hL_v5Z4EET0mqcW-wEUPL6zow9Ko'
-    // var CALENDAR_ID = '67sijt66lsm2knrachvdh5od4k@group.calendar.google.com'
-    // var CALENDAR_ID = '67sijt66lsm2knrachvdh5od4k%40group.calendar.google.com'
-    var SCOPE = 'https://www.googleapis.com/auth/calendar';
-    var CALENDAR_ID = 'primary'
-    var CALENDAR_EVENTS_LIST_URL =
-        'https://www.googleapis.com/calendar/v3/calendars/' + CALENDAR_ID
-        + '/events?key=' + API_KEY
+	var CLIENT_ID = '847847973603-krmib75bv3djnfui1bdfp2beppo4ovaq.apps.googleusercontent.com'
+	var API_KEY = 'AIzaSyCdGe4hL_v5Z4EET0mqcW-wEUPL6zow9Ko'
+	// var CALENDAR_ID = '67sijt66lsm2knrachvdh5od4k@group.calendar.google.com'
+	// var CALENDAR_ID = '67sijt66lsm2knrachvdh5od4k%40group.calendar.google.com'
+	var SCOPE = 'https://www.googleapis.com/auth/calendar';
+	var CALENDAR_ID = 'primary'
+	var CALENDAR_EVENTS_LIST_URL =
+		'https://www.googleapis.com/calendar/v3/calendars/' + CALENDAR_ID
+		+ '/events'
 
-    $scope.loginUrl = 
-    	'https://accounts.google.com/o/oauth2/auth' 
-    		+ '?response_type=token' 
-    		+ '&client_id=' + CLIENT_ID
-    		+ '&scope=' + SCOPE
-    		+ '&redirect_uri=' + 'http://localhost:8000'
+	$scope.loginUrl = 
+		'https://accounts.google.com/o/oauth2/auth' 
+			+ '?response_type=token' 
+			+ '&client_id=' + CLIENT_ID
+			+ '&scope=' + SCOPE
+			+ '&redirect_uri=' + 'http://localhost:8000'
 
 
-    $scope.$watch('location.search()', function() {
-    	console.log($location)
-    	console.log($location.search())
-    	console.log($location.path())
-    	console.log($location.path().split('&'))
-	    $scope.accessToken = ($location.search()).access_token
+	$scope.$watch('location.path()', function() {
+		loadAccessTokenFromUrl()
+		loadWeeksForCurrentMonth()
 	}, true)
 
-    $scope.loadWeeksForCurrentMonth = function() {
-    	$http.get('/js/events_extract.json').success(function(calendar) {
-    		var firstMondayToShow = getFirstMondayToShow()
-    		var lastSundayToShow = getLastSundayToShow()
-    		$scope.calendarGrid = spreadCalendarEventsBetween(
-    			calendar, firstMondayToShow, lastSundayToShow)
-    	}).error(function(error) {
-    		console.log('Error while getting events:', error)
-    	})
-    }
+	function loadWeeksForCurrentMonth() {
+		$http.get(CALENDAR_EVENTS_LIST_URL + '?access_token=' + $scope.accessToken)
+		.success(function(calendar) {
+			var firstMondayToShow = getFirstMondayToShow()
+			var lastSundayToShow = getLastSundayToShow()
+			$scope.calendarGrid = spreadCalendarEventsBetween(
+				calendar, firstMondayToShow, lastSundayToShow)
+		})
+		.error(function(error) {
+			console.log('Error while getting events: "'+ error + '"')
+		})
+	}
+
+	function loadAccessTokenFromUrl() {
+		var path = $location.path().split('/')[1]
+		var attributes = path && path.match(/&/) && path.split('&') || []
+		var attrMap = {}
+		attributes.forEach(function(element) {
+			if (!element.match(/\=/)) {
+				return
+			}
+			var entry = element.split('=')
+			attrMap[entry[0]] = entry[1]
+		})
+		$scope.accessToken = attrMap['access_token']
+	}
 
 	function getMidnight(date) {
 		var tzOffset = date.getTimezoneOffset();

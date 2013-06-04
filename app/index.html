@@ -8,13 +8,12 @@
 	<link rel="stylesheet" href="components/bootstrap/css/bootstrap.css" media="screen" />
 </head>
 
-<body ng-controller="Timesheet" ng-init="loadWeeksForCurrentMonth()">
-
-    <p class="text-center" ng-hide="{{accessToken}}" style="margin-top: 3em">
+<body ng-controller="Timesheet">
+    <p class="text-center" ng-hide="accessToken" style="margin-top: 3em">
         <a href="{{loginUrl}}">Log in using your google account</a>
     </p>
 
-    <table ng-show="{{accessToken}}" class="table" style="margin: 4em; width: 80em">
+    <table ng-show="accessToken" class="table" style="margin: 4em; width: 80em">
         <tr>
             <th style="width:14%">{{DAYS.monday}}</th>
             <th style="width:14%">{{DAYS.tuesday}}</th>
