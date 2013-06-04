@@ -21,6 +21,9 @@ function Timesheet($scope, $http, $location) {
 
     $scope.$watch('location.search()', function() {
     	console.log($location)
+    	console.log($location.search())
+    	console.log($location.path())
+    	console.log($location.path().split('&'))
 	    $scope.accessToken = ($location.search()).access_token
 	}, true)
 
