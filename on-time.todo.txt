@@ -1,6 +1,6 @@
-4. Show time of each event in description
 5. Show lateness of each event in tooltip
 6. Show time of each event in tooltip
 x 2013-06-02 1. Show event in red if late
 x 2013-06-02 2. Show event in green if on time
 x 2013-06-04 3. Get events from google calendar cf. http://goo.gl/9W9u7
+x 2013-06-05 4. Show time of each event in description

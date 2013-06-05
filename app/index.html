@@ -28,12 +28,13 @@
                 {{cell.day}}
                 <ul class="unstyled">
                     <li ng-repeat="lateness in cell.latenesses">
-                        <a><span
-                            tooltip="{{lateness.duration}} mn"
-                            style="font-weight: {{(lateness.duration > 60) && 'bold' || 'medium'}}; color: {{(lateness.duration > 0) && 'red' || 'green'}}">
-                            {{lateness.startTime}}
-                            {{lateness.event}}
-                        </span></a>
+                        <a href="#" tooltip="{{lateness.duration}} mn">
+                            <span
+                                style="font-weight: {{(lateness.duration > 60) && 'bold' || 'medium'}}; color: {{(lateness.duration > 0) && 'red' || 'green'}}">
+                                {{lateness.startTime}}
+                                {{lateness.event}}
+                            </span>
+                        </a>
                     </li>
                 </ul>
             </td>
@@ -41,7 +42,7 @@
     </table>
 
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="components/bootstrap/js/bootstrap.js"></script>
+    <!--script src="components/bootstrap/js/bootstrap.js"></script-->
     <script src="components/angular-1.0.7/angular.min.js"></script>
     <script src="components/angular-ui-bootstrap-0.3.0/ui-bootstrap-0.3.0.js"></script>
     <script src="js/messages.js"></script>

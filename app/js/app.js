@@ -1,4 +1,4 @@
-angular.module('onTime', ['ui.bootstrap'], function($locationProvider) {
+angular.module('onTime', ['ui.bootstrap', 'ui.bootstrap.tooltip'], function($locationProvider) {
       $locationProvider.html5Mode(false);
 })
 
