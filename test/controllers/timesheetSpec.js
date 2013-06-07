@@ -54,19 +54,47 @@ describe('Timesheet', function() {
 
         // THEN
         httpBackend.flush()
-        expect(scope.calendarGrid[4][2].latenesses.length).toEqual(8)
-        expect(scope.calendarGrid[4][2].latenesses[2].event).toEqual('Transport')
-        expect(scope.calendarGrid[4][2].latenesses[2].duration).toEqual(2)
-        expect(scope.calendarGrid[4][2].latenesses[2].startTime).toEqual('09:00')
-        expect(scope.calendarGrid[4][2].latenesses[3].event).toEqual('Travail')
-        expect(scope.calendarGrid[4][2].latenesses[3].duration).toEqual(-1)
-        expect(scope.calendarGrid[4][2].latenesses[3].startTime).toEqual('14:00')
-        expect(scope.calendarGrid[4][2].latenesses[6].event).toEqual('Vaisselle & rangement')
-        expect(scope.calendarGrid[4][2].latenesses[6].duration).toEqual(Number.MAX_VALUE)
-        expect(scope.calendarGrid[4][2].latenesses[6].startTime).toEqual('22:45')
+        var cell = scope.calendarGrid[4][2]
+        expect(cell.latenesses.length).toEqual(8)
+        expect(cell.latenesses[2].event).toEqual('Transport')
+        expect(cell.latenesses[2].duration).toEqual(2)
+        expect(cell.latenesses[2].startTime).toEqual('09:00')
+        expect(cell.latenesses[4].event).toEqual('Travail')
+        expect(cell.latenesses[4].duration).toEqual(-1)
+        expect(cell.latenesses[4].startTime).toEqual('14:00')
+        expect(cell.latenesses[6].event).toEqual('Vaisselle & rangement')
+        expect(cell.latenesses[6].duration).toEqual(Number.MAX_VALUE)
+        expect(cell.latenesses[6].startTime).toEqual('22:45')
     })
 
+    it('should sort the latenesses by event start time', function() {
+        console.log('HEEEEERE')
+        // GIVEN
+        var clock = sinon.useFakeTimers(Date.parse('2013/06/01 12:00'))
+        httpBackend.expectJSONP(/.*/).respond(201, GIVEN_UNSORTED_EVENTS);
+
+        // WHEN
+        location.path('/access_token=ANY_TOKEN')
+        scope.$apply()
+        httpBackend.flush()
+
+        // THEN
+        var cell = scope.calendarGrid[4][2]
+        expect(cell.day).toEqual('26')
+        expect(cell.latenesses.map(function(item) {
+            return item.event
+        })).toEqual(['firstEvent', 'secondEvent', 'thirdEvent'])
+    }) 
+
 })
+
+var GIVEN_UNSORTED_EVENTS = {
+    "items": [
+    {"summary": "thirdEvent", "start": {"dateTime": "2013-06-26T22:24:42+02:00"}, "description": "+40"},
+    {"summary": "secondEvent", "start": {"dateTime": "2013-06-26T11:09:56+02:00"}, "description": "+12"},
+    {"summary": "firstEvent", "start": {"dateTime": "2013-06-26T10:00:00+02:00"}, "description": "+10"}
+    ]
+}
 
 var GIVEN_EVENTS = {
     "kind": "calendar#events",

@@ -89,6 +89,7 @@ function Timesheet($scope, $http, $location) {
 				&& event.description.match(/^[+-]/)) {
 				return true
 			}
+			return false
 		}) || []
 	}
 
@@ -112,26 +113,29 @@ function Timesheet($scope, $http, $location) {
 	}
 
 	function spreadCalendarEventsBetween(calendar, firstMondayToShow, lastSundayToShow) {
-		var calendarGrid = []
+		var grid = []
 		var w = []
 		for (var d = firstMondayToShow;
 			d.getTime() <= lastSundayToShow.getTime();
 			d.setDate(d.getDate() + 1)) {
 			if (w.length == 0) {
-				calendarGrid.push(w)
+				grid.push(w)
 			}
-			w.push({
+			var cell = {
 				day: d.getDate() == 1 ? '1 '+MONTH_NAMES[d.getMonth()] : ''+d.getDate(),
 				date: d.toISOString(),
 				latenesses: getEvents(calendar, d).map(function(event) {
 					return toLateness(event)
+				}).sort(function(event1, event2) {
+					return event1.startTime.localeCompare(event2.startTime)
 				})
-			})
+			}
+			w.push(cell)
 			if (w.length == 7) {
 				w = []
 			}
 		}
-		return calendarGrid
+		return grid
 	}
 
 	function getFirstMondayToShow() {
