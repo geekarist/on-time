@@ -1,8 +1,9 @@
-8. Show time of each event in tooltip
-x 2013-06-02 1. Show event in red if late
-x 2013-06-02 2. Show event in green if on time
-x 2013-06-04 3. Get events from google calendar cf. http://goo.gl/9W9u7
-x 2013-06-05 4. Show time of each event in description
-x 2013-06-07 5. Show lateness of each event in tooltip
-x 2013-06-07 6. Sort events by start time
-x 2013-06-10 7. Highlight current day
+Show details on lateness in tooltip
+Show time of each event in tooltip
+x 2013-06-02 Show event in red if late
+x 2013-06-02 Show event in green if on time
+x 2013-06-04 Get events from google calendar cf. http://goo.gl/9W9u7
+x 2013-06-05 Show time of each event in description
+x 2013-06-07 Show lateness of each event in tooltip
+x 2013-06-07 Sort events by start time
+x 2013-06-10 Highlight current day

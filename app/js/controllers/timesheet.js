@@ -79,7 +79,6 @@ function Timesheet($scope, $http, $location) {
 		var result = date1.getYear() == date2.getYear()
 			&& date1.getMonth() == date2.getMonth()
 			&& date1.getDate() == date2.getDate()
-		console.log(date1, date2, result)
 		return result
 	}
 
