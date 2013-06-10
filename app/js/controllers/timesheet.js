@@ -76,9 +76,11 @@ function Timesheet($scope, $http, $location) {
 	}
 
 	function sameDay(date1, date2) {
-		return date1.getYear() == date2.getYear()
+		var result = date1.getYear() == date2.getYear()
 			&& date1.getMonth() == date2.getMonth()
 			&& date1.getDate() == date2.getDate()
+		console.log(date1, date2, result)
+		return result
 	}
 
 	function getEvents(calendar, date) {
@@ -124,6 +126,7 @@ function Timesheet($scope, $http, $location) {
 			var cell = {
 				day: d.getDate() == 1 ? '1 '+MONTH_NAMES[d.getMonth()] : ''+d.getDate(),
 				date: d.toISOString(),
+				today: sameDay(d, new Date()),
 				latenesses: getEvents(calendar, d).map(function(event) {
 					return toLateness(event)
 				}).sort(function(event1, event2) {

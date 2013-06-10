@@ -24,7 +24,8 @@
             <th style="width:14%">{{DAYS.sunday}}</th>
         </tr>
         <tr ng-repeat="line in calendarGrid">
-            <td ng-repeat="cell in line">
+            <td ng-repeat="cell in line" 
+                style="background-color: {{(cell.today && '#f0f0f0') || 'white'}}">
                 {{cell.day}}
                 <ul class="unstyled">
                     <li ng-repeat="lateness in cell.latenesses">

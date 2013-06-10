@@ -68,7 +68,6 @@ describe('Timesheet', function() {
     })
 
     it('should sort the latenesses by event start time', function() {
-        console.log('HEEEEERE')
         // GIVEN
         var clock = sinon.useFakeTimers(Date.parse('2013/06/01 12:00'))
         httpBackend.expectJSONP(/.*/).respond(201, GIVEN_UNSORTED_EVENTS);
@@ -85,6 +84,23 @@ describe('Timesheet', function() {
             return item.event
         })).toEqual(['firstEvent', 'secondEvent', 'thirdEvent'])
     }) 
+
+    it('should indicate if a cell\'s day is today', function() {
+        // GIVEN
+        var clock = sinon.useFakeTimers(Date.parse('2013/06/01 12:00'))
+        httpBackend.expectJSONP(/.*/).respond(201, GIVEN_UNSORTED_EVENTS);
+
+        // WHEN
+        location.path('/access_token=NEW_TOKEN')
+        scope.$apply()
+        httpBackend.flush()
+
+        // THEN
+        var cell = scope.calendarGrid[0][5]
+        console.log(cell)
+        expect(cell.day).toEqual('1 juin')
+        expect(cell.today).toEqual(true)
+    })
 
 })
 
