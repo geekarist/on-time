@@ -1,3 +1,5 @@
+Change color intensity according to lateness
+Propose login if auth cookie has expired
 Show details on lateness in tooltip
 Show time of each event in tooltip
 x 2013-06-02 Show event in red if late
