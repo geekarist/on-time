@@ -1,3 +1,4 @@
+Use smaller font, expand table to page width
 Change color intensity according to lateness
 Propose login if auth cookie has expired
 Show details on lateness in tooltip
