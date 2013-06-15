@@ -94,6 +94,23 @@ function Timesheet($scope, $http, $location) {
 		}) || []
 	}
 
+	function latenessStyle(duration) {
+		var style = {}
+		if (duration > 60) {
+			style.fontWeight = 'bold'
+		} else {
+			style.fontWeight = 'medium'
+		}
+		if (duration) {
+			if (duration > 0) {
+				style.color = 'red'
+			} else {
+				style.color = 'green'
+			}
+		}
+		return style
+	}
+
 	function toLateness(calendarEvent) {
 		var description = calendarEvent.description
 		var duration
@@ -106,8 +123,11 @@ function Timesheet($scope, $http, $location) {
 			}
 		}
 		var start = calendarEvent.start.dateTime.split('T')[1].split('+')[0]
+
 		return {
 			event: calendarEvent.summary,
+			eventLink: calendarEvent.htmlLink,
+			style: latenessStyle(duration),
 			duration: duration,
 			startTime: start.replace(/:..$/, '')
 		}

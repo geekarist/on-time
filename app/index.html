@@ -29,11 +29,13 @@
                 {{cell.day}}
                 <ul class="unstyled">
                     <li ng-repeat="lateness in cell.latenesses">
-                        <span tooltip="{{lateness.duration}} mn" tooltip-placement="right"
-                            style="font-weight: {{(lateness.duration > 60) && 'bold' || 'medium'}}; color: {{(lateness.duration > 0) && 'red' || 'green'}}">
-                            {{lateness.startTime}}
-                            {{lateness.event}}
-                        </span>
+                        <a href="{{lateness.eventLink}}" target="_blank">
+                            <span tooltip="{{lateness.duration}} mn" tooltip-placement="right"
+                                ng-style="lateness.style">
+                                {{lateness.startTime}}
+                                {{lateness.event}}
+                            </span>
+                        </a>
                     </li>
                 </ul>
             </td>

@@ -1,5 +1,4 @@
-Show next events
-Event links to google calendar
+Show next events (not easy)
 Change color intensity according to lateness
 Propose login if auth cookie has expired
 Show details on lateness in tooltip
@@ -12,3 +11,4 @@ x 2013-06-07 Show lateness of each event in tooltip
 x 2013-06-07 Sort events by start time
 x 2013-06-10 Highlight current day
 x 2013-06-13 Use smaller font, expand table to page width
+x 2013-06-15 Event links to google calendar
