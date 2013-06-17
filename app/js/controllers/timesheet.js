@@ -83,7 +83,7 @@ function Timesheet($scope, $http, $location) {
 	}
 
 	function getEvents(calendar, date) {
-		return calendar.items && calendar.items.filter(function(event) {
+		var items = calendar.items && calendar.items.filter(function(event) {
 			if (event.start && event.start.dateTime 
 				&& sameDay(new Date(event.start.dateTime), date)
 				&& event.description
@@ -92,6 +92,7 @@ function Timesheet($scope, $http, $location) {
 			}
 			return false
 		}) || []
+		return items
 	}
 
 	function latenessStyle(duration) {

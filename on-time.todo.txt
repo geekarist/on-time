@@ -1,3 +1,4 @@
+Don't get google calendar events outside of current month
 Show next events (not easy)
 Change color intensity according to lateness
 Propose login if auth cookie has expired
