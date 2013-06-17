@@ -103,6 +103,40 @@ describe('Timesheet', function() {
 		expect(cell.today).toEqual(true)
 	})
 
+	it('should return a given day\'s events, including next events', function() {
+		// GIVEN
+		var clock = sinon.useFakeTimers(Date.parse('2013/06/01 12:00'))
+		httpBackend.expectJSONP(/.*/).respond(201, GIVEN_EVENTS_INCLUDING_NEXT);
+
+		// WHEN
+		location.path('/access_token=TOKEN')
+		scope.$apply()
+		httpBackend.flush()
+
+		// THEN
+		var cell = scope.calendarGrid[3][0]
+		expect(cell.day).toEqual(17)
+		expect(cell.latenesses.length).toEqual(9)
+		expect(cell.latenesses[0].event).toEqual('Out of bed')
+		expect(cell.latenesses[0].duration).toEqual('-9')
+		expect(cell.latenesses[1].event).toEqual('Breakfast served')
+		expect(cell.latenesses[1].duration).toEqual('-13')
+		expect(cell.latenesses[2].event).toEqual('Clothes layed out')
+		expect(cell.latenesses[2].duration).toEqual('+0')
+		expect(cell.latenesses[3].event).toEqual('Ready to go')
+		expect(cell.latenesses[3].duration).toEqual('+3')
+		expect(cell.latenesses[4].event).toEqual('In scrum room')
+		expect(cell.latenesses[4].duration).toEqual('-4')
+		expect(cell.latenesses[5].event).toEqual('Working')
+		expect(cell.latenesses[5].duration).toBeUndefined()
+		expect(cell.latenesses[6].event).toEqual('Dinner served')
+		expect(cell.latenesses[6].duration).toBeUndefined()
+		expect(cell.latenesses[7].event).toEqual('Doing the dishes')
+		expect(cell.latenesses[7].duration).toBeUndefined()
+		expect(cell.latenesses[8].event).toEqual('In bed')
+		expect(cell.latenesses[8].duration).toBeUndefined()
+	})
+
 })
 
 var GIVEN_UNSORTED_EVENTS = {
