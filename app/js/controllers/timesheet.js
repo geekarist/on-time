@@ -23,11 +23,13 @@ function Timesheet($scope, $http, $location) {
 	}, true)
 
 	function loadWeeksForCurrentMonth() {
+		var firstMondayToShow = getFirstMondayToShow()
+		var lastSundayToShow = getLastSundayToShow()
 		$http.jsonp(CALENDAR_EVENTS_LIST_URL 
-			+ '?access_token=' + $scope.accessToken + '&callback=JSON_CALLBACK')
+			+ '?access_token=' + $scope.accessToken + '&callback=JSON_CALLBACK'
+			+ '&timeMin=' + firstMondayToShow.toISOString()
+			+ '&timeMax=' + lastSundayToShow.toISOString())
 		.success(function(calendar) {
-			var firstMondayToShow = getFirstMondayToShow()
-			var lastSundayToShow = getLastSundayToShow()
 			$scope.calendarGrid = spreadCalendarEventsBetween(
 				calendar, firstMondayToShow, lastSundayToShow)
 		})

@@ -137,13 +137,6 @@ describe('Timesheet', function() {
 	// 	expect(cell.latenesses[8].duration).toBeUndefined()
 	// })
 
-	it('should not hide expected events') {
-		// GIVEN
-		// WHEN
-		
-		// THEN
-	}
-
 })
 
 var GIVEN_UNSORTED_EVENTS = {
