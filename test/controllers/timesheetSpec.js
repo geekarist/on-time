@@ -103,39 +103,21 @@ describe('Timesheet', function() {
 		expect(cell.today).toEqual(true)
 	})
 
-	// it('should return a given day\'s events, including next events', function() {
-	// 	// GIVEN
-	// 	var clock = sinon.useFakeTimers(Date.parse('2013/06/01 12:00'))
-	// 	httpBackend.expectJSONP(/.*/).respond(201, GIVEN_EVENTS_INCLUDING_NEXT);
+	it('should return a given day\'s events, including next events', function() {
+		// GIVEN
+		var clock = sinon.useFakeTimers(Date.parse('2013/06/18 12:00'))
+		httpBackend.expectJSONP(/.*/).respond(201, GIVEN_EVENTS_INCLUDING_NEXT);
 
-	// 	// WHEN
-	// 	location.path('/access_token=TOKEN')
-	// 	scope.$apply()
-	// 	httpBackend.flush()
+		// WHEN
+		location.path('/access_token=TOKEN')
+		scope.$apply()
+		httpBackend.flush()
 
-	// 	// THEN
-	// 	var cell = scope.calendarGrid[3][0]
-	// 	expect(cell.day).toEqual(17)
-	// 	expect(cell.latenesses.length).toEqual(9)
-	// 	expect(cell.latenesses[0].event).toEqual('Out of bed')
-	// 	expect(cell.latenesses[0].duration).toEqual('-9')
-	// 	expect(cell.latenesses[1].event).toEqual('Breakfast served')
-	// 	expect(cell.latenesses[1].duration).toEqual('-13')
-	// 	expect(cell.latenesses[2].event).toEqual('Clothes layed out')
-	// 	expect(cell.latenesses[2].duration).toEqual('+0')
-	// 	expect(cell.latenesses[3].event).toEqual('Ready to go')
-	// 	expect(cell.latenesses[3].duration).toEqual('+3')
-	// 	expect(cell.latenesses[4].event).toEqual('In scrum room')
-	// 	expect(cell.latenesses[4].duration).toEqual('-4')
-	// 	expect(cell.latenesses[5].event).toEqual('Working')
-	// 	expect(cell.latenesses[5].duration).toBeUndefined()
-	// 	expect(cell.latenesses[6].event).toEqual('Dinner served')
-	// 	expect(cell.latenesses[6].duration).toBeUndefined()
-	// 	expect(cell.latenesses[7].event).toEqual('Doing the dishes')
-	// 	expect(cell.latenesses[7].duration).toBeUndefined()
-	// 	expect(cell.latenesses[8].event).toEqual('In bed')
-	// 	expect(cell.latenesses[8].duration).toBeUndefined()
-	// })
+		// THEN
+		var cell = scope.calendarGrid[3][1]
+		expect(cell.day).toEqual('18')
+		// expect(cell.latenesses.length).toEqual(4)
+	})
 
 })
 
@@ -225,4 +207,122 @@ var GIVEN_EVENTS = {
 			"end": {"dateTime": "2013-05-30T07:00:00+02:00"},
 		}
 	]
+}
+
+var GIVEN_EVENTS_INCLUDING_NEXT = {
+    "items": [
+        {
+            "summary": "Out of bed",
+            "end": {
+                "dateTime": "2013-06-13T07:35:00+02:00",
+                "timeZone": "Europe/Paris"
+            },
+            "htmlLink": "https://www.google.com/calendar/event?eid=c2lxdGczOWhoYXMxMGhwazh1cjVvMTkxMGdfMjAxMzA2MTNUMDUyMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+            "id": "siqtg39hhas10hpk8ur5o1910g",
+            "kind": "calendar#event",
+            "recurrence": [
+                "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"
+            ],
+            "sequence": 1,
+            "start": {
+                "dateTime": "2013-06-13T07:20:00+02:00",
+                "timeZone": "Europe/Paris"
+            }
+        },
+        {
+            "summary": "Breakfast served",
+            "start": {
+                "dateTime": "2013-06-13T07:35:00+02:00",
+                "timeZone": "Europe/Paris"
+            },
+            "end": {
+                "dateTime": "2013-06-13T07:50:00+02:00",
+                "timeZone": "Europe/Paris"
+            },
+            "htmlLink": "https://www.google.com/calendar/event?eid=MDRxamdwaHRjdnBsYzBscHQ1dnM3aDczcThfMjAxMzA2MTNUMDUzNTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+            "id": "04qjgphtcvplc0lpt5vs7h73q8",
+            "kind": "calendar#event",
+            "recurrence": [
+                "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"
+            ],
+            "sequence": 4
+        },
+        {
+            "summary": "Clothes layed out",
+            "end": {
+                "dateTime": "2013-06-13T08:45:00+02:00",
+                "timeZone": "Europe/Paris"
+            },
+            "htmlLink": "https://www.google.com/calendar/event?eid=MWw2NXU1ZGk5bmpydXNpcXAzOGtoZXRqdm9fMjAxMzA2MTNUMDYzMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+            "id": "1l65u5di9njrusiqp38khetjvo",
+            "kind": "calendar#event",
+            "recurrence": [
+                "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"
+            ],
+            "sequence": 6,
+            "start": {
+                "dateTime": "2013-06-13T08:30:00+02:00",
+                "timeZone": "Europe/Paris"
+            }
+        },
+        {
+            "summary": "Ready to go",
+            "end": {
+                "dateTime": "2013-06-13T09:15:00+02:00",
+                "timeZone": "Europe/Paris"
+            },
+            "htmlLink": "https://www.google.com/calendar/event?eid=dTZrYXZlcHR1b2hiamw5dmliN2Vvb200bjBfMjAxMzA2MTNUMDcwMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+            "id": "u6kaveptuohbjl9vib7eoom4n0",
+            "kind": "calendar#event",
+            "recurrence": [
+                "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"
+            ],
+            "sequence": 4,
+            "start": {
+                "dateTime": "2013-06-13T09:00:00+02:00",
+                "timeZone": "Europe/Paris"
+            }
+        },
+        {
+            "summary": "Out of bed",
+            "description": "-2",
+            "end": {
+                "dateTime": "2013-06-18T07:35:00+02:00"
+            },
+            "htmlLink": "https://www.google.com/calendar/event?eid=c2lxdGczOWhoYXMxMGhwazh1cjVvMTkxMGdfMjAxMzA2MThUMDUyMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+            "id": "siqtg39hhas10hpk8ur5o1910g_20130618T052000Z",
+            "kind": "calendar#event",
+            "originalStartTime": {
+                "dateTime": "2013-06-18T07:20:00+02:00"
+            },
+            "recurringEventId": "siqtg39hhas10hpk8ur5o1910g",
+            "sequence": 1,
+            "start": {
+                "dateTime": "2013-06-18T07:20:00+02:00"
+            }
+        },
+        {
+            "summary": "Breakfast served",
+            "description": "-3",
+            "end": {
+                "dateTime": "2013-06-18T07:50:00+02:00"
+            },
+            "htmlLink": "https://www.google.com/calendar/event?eid=MDRxamdwaHRjdnBsYzBscHQ1dnM3aDczcThfMjAxMzA2MThUMDUzNTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+            "id": "04qjgphtcvplc0lpt5vs7h73q8_20130618T053500Z",
+            "kind": "calendar#event",
+            "originalStartTime": {
+                "dateTime": "2013-06-18T07:35:00+02:00"
+            },
+            "recurringEventId": "04qjgphtcvplc0lpt5vs7h73q8",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 4,
+            "start": {
+                "dateTime": "2013-06-18T07:35:00+02:00"
+            }
+        }
+    ],
+    "kind": "calendar#events",
+    "summary": "On Time",
 }
