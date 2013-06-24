@@ -28,7 +28,8 @@ function Timesheet($scope, $http, $location) {
 		$http.jsonp(CALENDAR_EVENTS_LIST_URL 
 			+ '?access_token=' + $scope.accessToken + '&callback=JSON_CALLBACK'
 			+ '&timeMin=' + firstMondayToShow.toISOString()
-			+ '&timeMax=' + lastSundayToShow.toISOString())
+			+ '&timeMax=' + lastSundayToShow.toISOString()
+			+ '&maxResults=999')
 		.success(function(calendar) {
 			$scope.calendarGrid = spreadCalendarEventsBetween(
 				calendar, firstMondayToShow, lastSundayToShow)
