@@ -103,10 +103,10 @@ describe('Timesheet', function() {
 		expect(cell.today).toEqual(true)
 	})
 
-	it('should return a given day\'s events, including next events', function() {
+	it('should return a given day\'s events, including next non recurring events', function() {
 		// GIVEN
 		var clock = sinon.useFakeTimers(Date.parse('2013/06/18 12:00'))
-		httpBackend.expectJSONP(/.*/).respond(201, GIVEN_EVENTS_INCLUDING_NEXT);
+		httpBackend.expectJSONP(/.*/).respond(201, GIVEN_EVENTS_WITH_NEXT_NON_RECURRING);
 
 		// WHEN
 		location.path('/access_token=TOKEN')
@@ -116,7 +116,7 @@ describe('Timesheet', function() {
 		// THEN
 		var cell = scope.calendarGrid[3][1]
 		expect(cell.day).toEqual('18')
-		// expect(cell.latenesses.length).toEqual(4)
+		expect(cell.latenesses.length).toEqual(3)
 	})
 
 })
@@ -207,6 +207,56 @@ var GIVEN_EVENTS = {
 			"end": {"dateTime": "2013-05-30T07:00:00+02:00"},
 		}
 	]
+}
+
+var GIVEN_EVENTS_WITH_NEXT_NON_RECURRING = {
+    "items": [
+        {
+            "summary": "Out of bed",
+            "description": "-2",
+            "end": {
+                "dateTime": "2013-06-18T07:35:00+02:00"
+            },
+            "htmlLink": "https://www.google.com/calendar/event?eid=c2lxdGczOWhoYXMxMGhwazh1cjVvMTkxMGdfMjAxMzA2MThUMDUyMDAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+            "id": "siqtg39hhas10hpk8ur5o1910g_20130618T052000Z",
+            "kind": "calendar#event",
+            "originalStartTime": {
+                "dateTime": "2013-06-18T07:20:00+02:00"
+            },
+            "recurringEventId": "siqtg39hhas10hpk8ur5o1910g",
+            "sequence": 1,
+            "start": {
+                "dateTime": "2013-06-18T07:20:00+02:00"
+            }
+        },
+        {
+            "summary": "Breakfast served",
+            "description": "-3",
+            "end": {
+                "dateTime": "2013-06-18T07:50:00+02:00"
+            },
+            "htmlLink": "https://www.google.com/calendar/event?eid=MDRxamdwaHRjdnBsYzBscHQ1dnM3aDczcThfMjAxMzA2MThUMDUzNTAwWiA2N3NpanQ2NmxzbTJrbnJhY2h2ZGg1b2Q0a0Bn",
+            "id": "04qjgphtcvplc0lpt5vs7h73q8_20130618T053500Z",
+            "kind": "calendar#event",
+            "originalStartTime": {
+                "dateTime": "2013-06-18T07:35:00+02:00"
+            },
+            "recurringEventId": "04qjgphtcvplc0lpt5vs7h73q8",
+            "start": {
+                "dateTime": "2013-06-18T07:35:00+02:00"
+            }
+        },
+        {
+            "summary": "Ready to go",
+            "end": {
+                "dateTime": "2013-06-18T09:15:00+02:00"
+            },
+            "kind": "calendar#event",
+            "start": {
+                "dateTime": "2013-06-18T09:00:00+02:00"
+            }
+        }
+    ]
 }
 
 var GIVEN_EVENTS_INCLUDING_NEXT = {

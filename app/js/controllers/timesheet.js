@@ -85,12 +85,14 @@ function Timesheet($scope, $http, $location) {
 		return result
 	}
 
+	function startsOnDay(event, date) {
+		return event.start && event.start.dateTime 
+				&& sameDay(new Date(event.start.dateTime), date)
+	}
+
 	function getEvents(calendar, date) {
 		var items = calendar.items && calendar.items.filter(function(event) {
-			if (event.start && event.start.dateTime 
-				&& sameDay(new Date(event.start.dateTime), date)
-				&& event.description
-				&& event.description.match(/^[+-]/)) {
+			if (startsOnDay(event, date)) {
 				return true
 			}
 			return false
@@ -118,12 +120,14 @@ function Timesheet($scope, $http, $location) {
 	function toLateness(calendarEvent) {
 		var description = calendarEvent.description
 		var duration
-		if (description.match(/^\+inf/)) {
-			duration = Number.MAX_VALUE
-		} else {
-			var durationLine = description.match(/^([+-][0-9]+)/g)
-			if (durationLine) {
-				duration = parseInt(durationLine)
+		if (description) {
+			if (description.match(/^\+inf/)) {
+				duration = Number.MAX_VALUE
+			} else {
+				var durationLine = description.match(/^([+-][0-9]+)/g)
+				if (durationLine) {
+					duration = parseInt(durationLine)
+				}
 			}
 		}
 		var start = calendarEvent.start.dateTime.split('T')[1].split('+')[0]

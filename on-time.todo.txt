@@ -1,4 +1,5 @@
-Show next events (not easy): occursToday(event): recursToday(event) || startsToday(event)
+Show next non-recurring events: startsToday(event)
+Show next recurring events: recursToday(event)
 Change color intensity according to lateness
 Propose login if auth cookie has expired
 Show details on lateness in tooltip
